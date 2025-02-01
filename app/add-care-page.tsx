@@ -21,21 +21,21 @@ export default function AddCareScreen() {
                     style={styles.input}
                     onChangeText={setName}
                     value={name}
-                    placeholder="Wpisz imię"
+                    placeholder="Podaj imię"
                     keyboardType="default" />
                 </Text>
                 <Text>Nazwisko: <TextInput
                     style={styles.input}
                     onChangeText={setSurname}
                     value={surname}
-                    placeholder="Wpisz nazwisko"
+                    placeholder="Podaj nazwisko"
                     keyboardType="default" />
                 </Text>
                 <Text>Telefon: <TextInput
                     style={styles.input}
                     onChangeText={setPhone}
                     value={phone}
-                    placeholder="Wpisz numer telefonu"
+                    placeholder="Podaj numer telefonu"
                     keyboardType="phone-pad" />
                 </Text>
                 <Button
