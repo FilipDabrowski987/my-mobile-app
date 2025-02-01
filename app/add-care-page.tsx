@@ -16,34 +16,39 @@ export default function AddCareScreen() {
     return (
       <SafeAreaView style={{ flex: 1 }}>
             <View style={styles.container}>
-                <Text style={styles.label}>Dodaj opiekuna</Text>
-                <Text>Imię: <TextInput
+          <Text style={styles.header}>Dodaj opiekuna</Text>
+          <View style={styles.inputContainer}>
+          <Text style={styles.label}>Imię:</Text>
+          <TextInput
                     style={styles.input}
                     onChangeText={setName}
                     value={name}
                     placeholder="Podaj imię"
                     keyboardType="default" />
-                </Text>
-                <Text>Nazwisko: <TextInput
+                
+          <Text style={styles.label}>Nazwisko:</Text>
+          <TextInput
                     style={styles.input}
                     onChangeText={setSurname}
                     value={surname}
                     placeholder="Podaj nazwisko"
                     keyboardType="default" />
-                </Text>
-                <Text>Telefon: <TextInput
+          <Text style={styles.label}>Telefon:</Text>
+          <TextInput
                     style={styles.input}
                     onChangeText={setPhone}
                     value={phone}
                     placeholder="Podaj numer telefonu"
-                    keyboardType="phone-pad" />
-                </Text>
+              keyboardType="phone-pad" />
+          </View>
+          <View style={styles.buttonContainer}>
                 <Button
                     title={'Zapisz'}
                     onPress={handleAddCare}/>
                 <Button
                     title={'Wróć'}
-                    onPress={() => router.back()}/>
+              onPress={() => router.back()} />
+          </View>
             </View>
         </SafeAreaView>
 )}
@@ -51,17 +56,28 @@ export default function AddCareScreen() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    // justifyContent: 'center',
     alignItems: 'center',
     backgroundColor: 'lightgray',
-    gap: 20,
   },
-  label: {
+  header: {
     marginTop: 20,
     fontSize: 24,
     marginBottom: 10,
     fontWeight: '700',
     color: '#333',
+  },
+  inputContainer: {
+    alignItems: 'center',
+    width: '100%',
+    marginBottom: 20,
+  },
+  label: {
+    textAlign: "left",
+    width: "80%",
+    marginTop: 10,
+    marginBottom: 3,
+    fontSize: 14,
+    color: "#333",
   },
   input: {
     height: 40,
@@ -71,6 +87,9 @@ const styles = StyleSheet.create({
     borderRadius: 10,
     padding: 10,
     backgroundColor: "white",
-    alignItems: 'flex-end',
   },
+  buttonContainer: {
+    gap: 20,
+    marginBottom: 20,
+  }
 })
