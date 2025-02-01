@@ -38,7 +38,7 @@ export default function AddCareScreen() {
                     style={styles.input}
                     onChangeText={setPhone}
                     value={phone}
-                    placeholder="Podaj numer telefonu"
+                    placeholder="Podaj nr telefonu"
               keyboardType="phone-pad" />
           </View>
           <View style={styles.buttonContainer}>
