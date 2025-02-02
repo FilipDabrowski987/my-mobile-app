@@ -7,9 +7,15 @@ export default function SearchScreen() {
   return (
     <SafeAreaView style={{ flex: 1 }}>
       <View style={styles.container}>
-        <Text style={styles.label}>Wyszukaj:</Text>
-        <Button title={"Opiekuna"} onPress={() => router.push("/")} />
-        <Button title={"Podopiecznego"} onPress={() => router.push("/")} />
+        <Text style={styles.header}>Wyszukaj:</Text>
+        <Button
+          title={"Opiekuna"}
+          onPress={() => router.push("/search-carer-page")}
+        />
+        <Button
+          title={"Podopiecznego"}
+          onPress={() => router.push("/search-patient-page")}
+        />
         <Button title={"Wróć"} onPress={() => router.back()} />
       </View>
     </SafeAreaView>
@@ -23,7 +29,7 @@ const styles = StyleSheet.create({
     backgroundColor: "lightgray",
     gap: 20,
   },
-  label: {
+  header: {
     marginTop: 20,
     fontSize: 24,
     marginBottom: 10,
