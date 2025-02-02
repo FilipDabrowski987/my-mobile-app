@@ -5,6 +5,26 @@ export default function NameForm() {
   const [name, setName] = useState("");
   const [surname, setSurname] = useState("");
   const [phone, setPhone] = useState("");
+  const [isPhoneFocused, setIsPhoneFocused] = useState(false);
+
+  const handlePhoneChange = (text: string) => {
+    if (!text.startsWith("+48")) {
+      setPhone(text);
+    } else {
+      setPhone(text);
+    }
+  };
+
+  const handlePhoneFocus = () => {
+    if (phone === "") {
+      setPhone("+48 ");
+    }
+    setIsPhoneFocused(true);
+  };
+
+  const handlePhoneBlur = () => {
+    setIsPhoneFocused(false);
+  };
 
   return (
     <View style={styles.inputContainer}>
@@ -29,10 +49,12 @@ export default function NameForm() {
       <Text style={styles.label}>Telefon:</Text>
       <TextInput
         style={styles.input}
-        onChangeText={setPhone}
+        onChangeText={handlePhoneChange}
         value={phone}
         placeholder="Podaj nr telefonu"
         keyboardType="phone-pad"
+        onFocus={handlePhoneFocus}
+        onBlur={handlePhoneBlur}
       />
     </View>
   );

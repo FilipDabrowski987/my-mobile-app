@@ -5,6 +5,26 @@ export default function ContactPersonForm() {
   const [contactPersonName, setContactPersonName] = useState("");
   const [contactPersonSurname, setContactPersonSurname] = useState("");
   const [contactPersonPhone, setContactPersonPhone] = useState("");
+  const [isPhoneFocused, setIsPhoneFocused] = useState(false);
+
+  const handlePhoneChange = (text: string) => {
+    if (!text.startsWith("+48")) {
+      setContactPersonPhone(text);
+    } else {
+      setContactPersonPhone(text);
+    }
+  };
+
+  const handlePhoneFocus = () => {
+    if (contactPersonPhone === "") {
+      setContactPersonPhone("+48 ");
+    }
+    setIsPhoneFocused(true);
+  };
+
+  const handlePhoneBlur = () => {
+    setIsPhoneFocused(false);
+  };
 
   return (
     <View style={styles.inputContainer}>
@@ -29,10 +49,12 @@ export default function ContactPersonForm() {
       <Text style={styles.label}>Telefon:</Text>
       <TextInput
         style={styles.input}
-        onChangeText={setContactPersonPhone}
+        onChangeText={handlePhoneChange}
         value={contactPersonPhone}
         placeholder="Podaj numer telefonu osoby kontaktowej"
         keyboardType="phone-pad"
+        onFocus={handlePhoneFocus}
+        onBlur={handlePhoneBlur}
       />
     </View>
   );
