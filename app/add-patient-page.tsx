@@ -16,6 +16,12 @@ export default function AddPatientScreen() {
     setContactPersons((prev) => [...prev, prev.length + 1]);
   };
 
+  const handleRemoveContactPerson = () => {
+    if (contactPersons.length > 1) {
+      setContactPersons((prev) => prev.slice(0, -1));
+    }
+  };
+
   const handleAddPatient = async () => {};
 
   return (
@@ -53,6 +59,13 @@ export default function AddPatientScreen() {
                 <Button title={"+"} onPress={handleAddContactPerson} />
                 <Text>Dodaj kolejną osobę kontaktową</Text>
               </View>
+
+              {contactPersons.length > 1 && (
+                <View style={styles.addContactPersonButton}>
+                  <Button title={"-"} onPress={handleRemoveContactPerson} />
+                  <Text>Usuń osobę kontaktową</Text>
+                </View>
+              )}
             </View>
           )}
 
