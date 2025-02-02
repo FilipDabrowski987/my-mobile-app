@@ -7,6 +7,15 @@ export type TCarer = {
   name: string;
   surname: string;
   phone: string;
+  email: string;
+  adres: {
+    zipcode: string;
+    city: string;
+    street: string;
+    houseNumber: string;
+    flatNumber: string;
+  };
+  OWES: boolean;
 };
 
 export default function HomeScreen() {

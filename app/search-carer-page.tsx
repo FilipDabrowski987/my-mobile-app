@@ -61,6 +61,10 @@ export default function SearchCarerScreen() {
     return 0;
   });
 
+  // const handleClear = () => {
+  //   setSearchQuery("");
+  // };
+
   return (
     <SafeAreaView style={{ flex: 1 }}>
       <View style={styles.container}>
@@ -78,6 +82,7 @@ export default function SearchCarerScreen() {
           />
         </View>
         <View style={styles.buttonContainer}>
+          {/* <Button title={"Wyczyść"} onPress={handleClear} /> */}
           <Button title={"Wróć"} onPress={() => router.back()} />
         </View>
         <View style={{ flex: 1 }}>

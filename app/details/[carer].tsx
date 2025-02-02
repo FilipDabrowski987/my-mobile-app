@@ -31,7 +31,7 @@ export default function DetailsCarerScreen() {
 
   return (
     <View style={styles.container}>
-      <Text style={styles.header}>Ekran szczegółów opiekuna </Text>
+      <Text style={styles.header}>Informacje o opiekunie </Text>
       {carer ? (
         <View>
           <View style={styles.nameContainer}>

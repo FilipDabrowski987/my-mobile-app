@@ -9,6 +9,7 @@ import { SafeAreaView } from "react-native-safe-area-context";
 
 export default function AddPatientScreen() {
   const [isSelected, setSelection] = useState(false);
+  const [isLyingDownPerson, setLyingDownPerson] = useState(false);
   const [contactPersons, setContactPersons] = useState([1]);
   const router = useRouter();
 
@@ -31,7 +32,18 @@ export default function AddPatientScreen() {
           <Text style={styles.header}>Dodaj podopiecznego</Text>
           <NameForm />
           <AdresForm />
-          <View style={styles.inputContainer}></View>
+
+          <View style={styles.checkboxContainer}>
+            <Checkbox
+              value={isLyingDownPerson}
+              onValueChange={setLyingDownPerson}
+              color={isLyingDownPerson ? "#007AFF" : undefined}
+            />
+            <Text>Osoba leżąca</Text>
+          </View>
+
+          <Text>Dodać:</Text>
+          <Text>Stopień niepełnosprawności</Text>
 
           <View style={styles.checkboxContainer}>
             <Checkbox
@@ -98,7 +110,7 @@ const styles = StyleSheet.create({
   checkboxContainer: {
     flexDirection: "row",
     gap: 10,
-    marginBottom: 10,
+    marginVertical: 15,
   },
   buttonContainer: {
     gap: 20,
