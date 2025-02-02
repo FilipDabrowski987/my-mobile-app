@@ -59,7 +59,6 @@ export default function AddPatientScreen() {
                 <Button title={"+"} onPress={handleAddContactPerson} />
                 <Text>Dodaj kolejną osobę kontaktową</Text>
               </View>
-
               {contactPersons.length > 1 && (
                 <View style={styles.addContactPersonButton}>
                   <Button title={"-"} onPress={handleRemoveContactPerson} />
