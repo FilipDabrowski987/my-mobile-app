@@ -5,10 +5,10 @@ import {
   StyleSheet,
   Text,
   TextInput,
+  TouchableOpacity,
   View,
 } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
-// import axios from "axios";
 import { useEffect, useState } from "react";
 
 export default function SearchCarerScreen() {
@@ -80,7 +80,7 @@ export default function SearchCarerScreen() {
         <View style={styles.buttonContainer}>
           <Button title={"Wróć"} onPress={() => router.back()} />
         </View>
-        <View>
+        <View style={{ flex: 1 }}>
           <Text style={styles.header}>Lista opiekunów</Text>
 
           {loading ? (
@@ -91,11 +91,14 @@ export default function SearchCarerScreen() {
                 data={filteredCarers}
                 keyExtractor={(user) => user.id.toString()}
                 renderItem={({ item }) => (
-                  <View style={styles.carerItem}>
+                  <TouchableOpacity
+                    style={styles.carerItem}
+                    onPress={() => router.push(`/details/carer?id=${item.id}`)}
+                  >
                     <Text
                       style={styles.carerName}
                     >{`${item.surname} ${item.name}`}</Text>
-                  </View>
+                  </TouchableOpacity>
                 )}
               />
             </View>
@@ -123,6 +126,7 @@ const styles = StyleSheet.create({
   },
   listContainer: {
     width: "100%",
+    paddingBottom: 60,
   },
   inputContainer: {
     alignItems: "center",
