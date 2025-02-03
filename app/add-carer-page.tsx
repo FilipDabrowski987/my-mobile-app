@@ -1,8 +1,7 @@
-import AdditionalOptionsForm from "@/components/AdditionalOptionsForm";
+import AdditionalCarerOptionsForm from "@/components/AdditionalCarerOptionsForm";
 import AdresForm from "@/components/AdresForm";
 import EmailForm from "@/components/EmailForm";
 import NameForm from "@/components/NameForm";
-import Checkbox from "expo-checkbox";
 import { useRouter } from "expo-router";
 import { useState } from "react";
 import {
@@ -16,7 +15,6 @@ import {
 import { SafeAreaView } from "react-native-safe-area-context";
 
 export default function AddCarerScreen() {
-  const [isSelected, setSelection] = useState(false);
   const router = useRouter();
 
   const handleAddCarer = async () => {};
@@ -29,18 +27,7 @@ export default function AddCarerScreen() {
           <NameForm />
           <EmailForm />
           <AdresForm />
-          <AdditionalOptionsForm />
-          <View style={styles.checkboxContainer}>
-            <Checkbox
-              value={isSelected}
-              onValueChange={setSelection}
-              color={isSelected ? "#007AFF" : undefined}
-            />
-            <Text>Zatrudnienie z OWES</Text>
-          </View>
-          <Text>Dodać:</Text>
-          <Text>Rodzaj zatrudnienia</Text>
-          <Text>Wymiar czasu pracy</Text>
+          <AdditionalCarerOptionsForm />
           <View style={styles.buttonContainer}>
             <Button title={"Zapisz"} onPress={handleAddCarer} />
             <Button title={"Wróć"} onPress={() => router.back()} />
@@ -71,6 +58,6 @@ const styles = StyleSheet.create({
   },
   buttonContainer: {
     gap: 20,
-    marginBottom: 20,
+    marginVertical: 20,
   },
 });
