@@ -99,7 +99,7 @@ export default function SearchCarerScreen() {
                 renderItem={({ item }) => (
                   <TouchableOpacity
                     style={styles.carerItem}
-                    onPress={() => router.push(`/details/carer?id=${item.id}`)}
+                    onPress={() => router.push(`/details/carer/${item.id}`)}
                   >
                     <Text
                       style={styles.carerName}

@@ -44,7 +44,7 @@ export default function AdresForm() {
             style={styles.inputHouseNumber}
             onChangeText={setHouseNumber}
             value={houseNumber}
-            placeholder="Podaj nr domu"
+            placeholder="Nr domu"
             keyboardType="numeric"
           />
         </View>
@@ -55,7 +55,7 @@ export default function AdresForm() {
             style={styles.inputHouseNumber}
             onChangeText={setFlatNumber}
             value={flatNumber}
-            placeholder="Podaj nr mieszkania"
+            placeholder="Nr mieszkania"
             keyboardType="numeric"
           />
         </View>

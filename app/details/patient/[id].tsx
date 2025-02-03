@@ -1,18 +1,18 @@
 import { useLocalSearchParams, useRouter } from "expo-router";
 import { useEffect, useState } from "react";
-import { TCarer } from "../(tabs)";
+import { TPatient } from "../../(tabs)";
 import { Button, Linking, StyleSheet, Text, View } from "react-native";
-import carersData from "../../assets/testDataCarer.json";
+import patientsData from "../../../assets/testDataPatient.json";
 
-export default function DetailsCarerScreen() {
-  const { id } = useLocalSearchParams();
-  const [carer, setCarer] = useState<TCarer | null>(null);
+export default function DetailsPatientScreen() {
+  const { id } = useLocalSearchParams<{ id: string }>();
+  const [patient, setPatient] = useState<TPatient | null>(null);
   const router = useRouter();
 
   useEffect(() => {
     if (id) {
-      const foundCarer = carersData.find((c) => c.id.toString() === id);
-      setCarer(foundCarer || null);
+      const foundPatient = patientsData.find((p) => p.id.toString() === id);
+      setPatient(foundPatient || null);
     }
   }, [id]);
 
@@ -39,7 +39,7 @@ export default function DetailsCarerScreen() {
     return formattedNumber;
   };
 
-  const renderAddress = (adres: TCarer["adres"]) => {
+  const renderAddress = (adres: TPatient["adres"]) => {
     if (adres.city && adres.houseNumber) {
       if (adres.street && adres.flatNumber) {
         return `ul. ${adres.street} ${adres.houseNumber} m.${adres.flatNumber}\n${adres.zipcode} ${adres.city}`;
@@ -53,22 +53,27 @@ export default function DetailsCarerScreen() {
 
   return (
     <View style={styles.container}>
-      <Text style={styles.header}>Informacje o opiekunie </Text>
-      {carer ? (
+      <Text style={styles.header}>Informacje o podopiecznym </Text>
+      {patient ? (
         <View>
           <View style={styles.nameContainer}>
             <Text style={styles.name}>
-              {carer.name} {carer.surname}
+              {patient.name} {patient.surname}
             </Text>
             <View style={styles.phoneContainer}>
-              <Text style={styles.phone}>{formatPhoneNumber(carer.phone)}</Text>
+              <Text style={styles.phone}>
+                {formatPhoneNumber(patient.phone)}
+              </Text>
               <View>
-                <Button title="Zadzwoń" onPress={() => makeCall(carer.phone)} />
+                <Button
+                  title="Zadzwoń"
+                  onPress={() => makeCall(patient.phone)}
+                />
                 {/*trzeba nadać uprawnienia */}
               </View>
             </View>
-            <View style={styles.detailsContainer}>
-              <Text style={styles.details}>{renderAddress(carer.adres)}</Text>
+            {/* <View style={styles.detailsContainer}>
+              <Text style={styles.details}>{renderAddress(patient.adres)}</Text>
               <Text style={styles.details}>{carer.email}</Text>
               <Text style={styles.details}>
                 Zatrudnienie z OWES: {carer.OWES}
@@ -79,7 +84,7 @@ export default function DetailsCarerScreen() {
               <Text style={styles.details}>
                 Wymiar czasu pracy: {carer.workingTime}
               </Text>
-            </View>
+            </View> */}
           </View>
 
           <View style={styles.actionButtonsContainer}>
@@ -101,7 +106,7 @@ export default function DetailsCarerScreen() {
       <View style={styles.buttonContainer}>
         <Button title={"Wróć"} onPress={() => router.back()} />
       </View>
-      {carer && <Text>ID: {carer.id}</Text>}
+      {patient && <Text>ID: {patient.id}</Text>}
     </View>
   );
 }
