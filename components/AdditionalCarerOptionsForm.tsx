@@ -11,12 +11,12 @@ export default function AdditionalCarerOptionsForm() {
     <View style={styles.inputContainer}>
       <Text style={styles.label}>Zatrudnienie z OWES:</Text>
       <View style={styles.pickerContainer}>
-        {!isOwes && <Text style={styles.placeholder}>Wybierz opcję...</Text>}
+        {/* {!isOwes && <Text style={styles.placeholder}>Wybierz opcję...</Text>} */}
         <Picker
           selectedValue={isOwes}
           onValueChange={(itemValue) => setOwes(itemValue)}
         >
-          <Picker.Item label="" value="" enabled={false} />
+          <Picker.Item label="Wybierz opcję..." value="" enabled={false} />
           <Picker.Item label="TAK" value="Tak" />
           <Picker.Item label="NIE" value="Nie" />
         </Picker>
@@ -24,14 +24,14 @@ export default function AdditionalCarerOptionsForm() {
 
       <Text style={styles.label}>Rodzaj zatrudnienia:</Text>
       <View style={styles.pickerContainer}>
-        {!typeOfContract && (
+        {/* {!typeOfContract && (
           <Text style={styles.placeholder}>Wybierz opcję...</Text>
-        )}
+        )} */}
         <Picker
           selectedValue={typeOfContract}
           onValueChange={(itemValue) => setTypeOfContract(itemValue)}
         >
-          <Picker.Item label="" value="" enabled={false} />
+          <Picker.Item label="Wybierz opcję..." value="" enabled={false} />
           <Picker.Item label="Umowa o pracę" value="Umowa o pracę" />
           <Picker.Item label="Umowa zlecenie" value="Umowa zlecenie" />
         </Picker>
@@ -39,14 +39,14 @@ export default function AdditionalCarerOptionsForm() {
 
       <Text style={styles.label}>Wymiar czasu pracy:</Text>
       <View style={styles.pickerContainer}>
-        {!workingTime && (
+        {/* {!workingTime && (
           <Text style={styles.placeholder}>Wybierz opcję...</Text>
-        )}
+        )} */}
         <Picker
           selectedValue={workingTime}
           onValueChange={(itemValue) => setWorkingTime(itemValue)}
         >
-          <Picker.Item label="" value="" enabled={false} />
+          <Picker.Item label="Wybierz opcję..." value="" enabled={false} />
           <Picker.Item label="Cały etat" value="Cały etat" />
           <Picker.Item label="1/2 etatu" value="1/2 etatu" />
         </Picker>

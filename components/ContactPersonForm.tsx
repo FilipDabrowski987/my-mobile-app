@@ -51,7 +51,7 @@ export default function ContactPersonForm() {
         style={styles.input}
         onChangeText={handlePhoneChange}
         value={contactPersonPhone}
-        placeholder="Podaj numer telefonu osoby kontaktowej"
+        placeholder="Podaj nr telefonu osoby kontaktowej"
         keyboardType="phone-pad"
         onFocus={handlePhoneFocus}
         onBlur={handlePhoneBlur}

@@ -10,14 +10,14 @@ export default function AdditionalPatientOptionsForm() {
     <View style={styles.inputContainer}>
       <Text style={styles.label}>Stopień niepełnosprawności:</Text>
       <View style={styles.pickerContainer}>
-        {!degreeOfDisability && (
+        {/* {!degreeOfDisability && (
           <Text style={styles.placeholder}>Wybierz opcję...</Text>
-        )}
+        )} */}
         <Picker
           selectedValue={degreeOfDisability}
           onValueChange={(itemValue) => setDegreeOfDisability(itemValue)}
         >
-          <Picker.Item label="" value="" enabled={false} />
+          <Picker.Item label="Wybierz opcję..." value="" enabled={false} />
           <Picker.Item label="Lekki" value="Lekki" />
           <Picker.Item label="Umiarkowany" value="Umiarkowany" />
           <Picker.Item label="Znaczny" value="Znaczny" />
@@ -26,14 +26,14 @@ export default function AdditionalPatientOptionsForm() {
 
       <Text style={styles.label}>Osoba leżąca:</Text>
       <View style={styles.pickerContainer}>
-        {!isLyingDownPerson && (
+        {/* {!isLyingDownPerson && (
           <Text style={styles.placeholder}>Wybierz opcję...</Text>
-        )}
+        )} */}
         <Picker
           selectedValue={isLyingDownPerson}
           onValueChange={(itemValue) => setLyingDownPerson(itemValue)}
         >
-          <Picker.Item label="" value="" enabled={false} />
+          <Picker.Item label="Wybierz opcję..." value="" enabled={false} />
           <Picker.Item label="TAK" value="Tak" />
           <Picker.Item label="NIE" value="Nie" />
         </Picker>

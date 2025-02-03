@@ -72,32 +72,15 @@ export default function DetailsPatientScreen() {
                 {/*trzeba nadać uprawnienia */}
               </View>
             </View>
-            {/* <View style={styles.detailsContainer}>
+            <View style={styles.detailsContainer}>
               <Text style={styles.details}>{renderAddress(patient.adres)}</Text>
-              <Text style={styles.details}>{carer.email}</Text>
               <Text style={styles.details}>
-                Zatrudnienie z OWES: {carer.OWES}
+                Stopień niepełnosprawności: {patient.degreeOfDisability}
               </Text>
               <Text style={styles.details}>
-                Rodzaj zatrudnienia: {carer.typeOfContract}
+                Osoba leżąca: {patient.isLyingDownPerson}
               </Text>
-              <Text style={styles.details}>
-                Wymiar czasu pracy: {carer.workingTime}
-              </Text>
-            </View> */}
-          </View>
-
-          <View style={styles.actionButtonsContainer}>
-            <Button title={"Jakieś"} onPress={() => router.back()} />
-            <Button title={"Przyciski"} onPress={() => router.back()} />
-            <Button title={"Do"} onPress={() => router.back()} />
-            <Button title={"Robienia"} onPress={() => router.back()} />
-            <Button title={"Różnych"} onPress={() => router.back()} />
-            <Button title={"Rzeczy,"} onPress={() => router.back()} />
-            <Button title={"Zależy"} onPress={() => router.back()} />
-            <Button title={"Co"} onPress={() => router.back()} />
-            <Button title={"Będzie"} onPress={() => router.back()} />
-            <Button title={"Potrzebne"} onPress={() => router.back()} />
+            </View>
           </View>
         </View>
       ) : (
