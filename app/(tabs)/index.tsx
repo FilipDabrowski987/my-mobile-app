@@ -15,7 +15,9 @@ export type TCarer = {
     houseNumber: string;
     flatNumber: string;
   };
-  OWES: boolean;
+  OWES: string;
+  typeOfContract: string;
+  workingTime: string;
 };
 
 export default function HomeScreen() {

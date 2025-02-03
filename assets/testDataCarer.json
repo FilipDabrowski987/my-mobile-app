@@ -1,122 +1,342 @@
 [
-    {
-        "id": 1,
-        "name": "Agnieszka",
-        "surname": "Pietrzak",
-        "phone": "+48 219399513"
+  {
+    "id": 1,
+    "name": "Agnieszka",
+    "surname": "Pietrzak",
+    "phone": "+48 219399513",
+    "email": "agnieszka.pietrzak@example.com",
+    "adres": {
+      "zipcode": "00-001",
+      "city": "Warszawa",
+      "street": "Kwiatowa",
+      "houseNumber": "12",
+      "flatNumber": "5"
     },
-    {
-        "id": 2,
-        "name": "Tomasz",
-        "surname": "Kamiński",
-        "phone": "+48 757482751"
+    "OWES": "Tak",
+    "typeOfContract": "Umowa o pracę",
+    "workingTime": "Cały etat"
+  },
+  {
+    "id": 2,
+    "name": "Tomasz",
+    "surname": "Kamiński",
+    "phone": "+48 757482751",
+    "email": "tomasz.kaminski@example.com",
+    "adres": {
+      "zipcode": "30-002",
+      "city": "Kraków",
+      "street": "Leśna",
+      "houseNumber": "8",
+      "flatNumber": "2"
     },
-    {
-        "id": 3,
-        "name": "Piotr",
-        "surname": "Kamiński",
-        "phone": "+48 471088250"
+    "OWES": "Nie",
+    "typeOfContract": "Umowa zlecenie",
+    "workingTime": "1/2 etatu"
+  },
+  {
+    "id": 3,
+    "name": "Piotr",
+    "surname": "Kamiński",
+    "phone": "+48 471088250",
+    "email": "piotr.kaminski@example.com",
+    "adres": {
+      "zipcode": "40-003",
+      "city": "Katowice",
+      "street": "Słoneczna",
+      "houseNumber": "15",
+      "flatNumber": "10"
     },
-    {
-        "id": 4,
-        "name": "Krzysztof",
-        "surname": "Kowalski",
-        "phone": "+48 573463703"
+    "OWES": "Tak",
+    "typeOfContract": "Umowa o pracę",
+    "workingTime": "1/2 etatu"
+  },
+  {
+    "id": 4,
+    "name": "Krzysztof",
+    "surname": "Kowalski",
+    "phone": "+48 573463703",
+    "email": "krzysztof.kowalski@example.com",
+    "adres": {
+      "zipcode": "20-004",
+      "city": "Lublin",
+      "street": "Miodowa",
+      "houseNumber": "22",
+      "flatNumber": "7"
     },
-    {
-        "id": 5,
-        "name": "Barbara",
-        "surname": "Kwiatkowski",
-        "phone": "+48 100476779"
+    "OWES": "Nie",
+    "typeOfContract": "Umowa zlecenie",
+    "workingTime": "Cały etat"
+  },
+  {
+    "id": 5,
+    "name": "Barbara",
+    "surname": "Kwiatkowski",
+    "phone": "+48 100476779",
+    "email": "barbara.kwiatkowski@example.com",
+    "adres": {
+      "zipcode": "60-005",
+      "city": "Poznań",
+      "street": "Parkowa",
+      "houseNumber": "5",
+      "flatNumber": "3"
     },
-    {
-        "id": 6,
-        "name": "Monika",
-        "surname": "Mazur",
-        "phone": "+48 786165669"
+    "OWES": "Tak",
+    "typeOfContract": "Umowa o pracę",
+    "workingTime": "Cały etat"
+  },
+  {
+    "id": 6,
+    "name": "Monika",
+    "surname": "Mazur",
+    "phone": "+48 786165669",
+    "email": "monika.mazur@example.com",
+    "adres": {
+      "zipcode": "70-006",
+      "city": "Szczecin",
+      "street": "Dębowa",
+      "houseNumber": "10",
+      "flatNumber": "1"
     },
-    {
-        "id": 7,
-        "name": "Zofia",
-        "surname": "Lewandowski",
-        "phone": "+48 604034837"
+    "OWES": "Tak",
+    "typeOfContract": "Umowa zlecenie",
+    "workingTime": "1/2 etatu"
+  },
+  {
+    "id": 7,
+    "name": "Zofia",
+    "surname": "Lewandowski",
+    "phone": "+48 604034837",
+    "email": "zofia.lewandowski@example.com",
+    "adres": {
+      "zipcode": "80-007",
+      "city": "Gdańsk",
+      "street": "Sosnowa",
+      "houseNumber": "18",
+      "flatNumber": "6"
     },
-    {
-        "id": 8,
-        "name": "Tomasz",
-        "surname": "Krawczyk",
-        "phone": "+48 785297414"
+    "OWES": "Nie",
+    "typeOfContract": "Umowa o pracę",
+    "workingTime": "Cały etat"
+  },
+  {
+    "id": 8,
+    "name": "Tomasz",
+    "surname": "Krawczyk",
+    "phone": "+48 785297414",
+    "email": "tomasz.krawczyk@example.com",
+    "adres": {
+      "zipcode": "90-008",
+      "city": "Łódź",
+      "street": "Brzozowa",
+      "houseNumber": "7",
+      "flatNumber": "4"
     },
-    {
-        "id": 9,
-        "name": "Andrzej",
-        "surname": "Dąbrowski",
-        "phone": "+48 284293659"
+    "OWES": "Tak",
+    "typeOfContract": "Umowa zlecenie",
+    "workingTime": "1/2 etatu"
+  },
+  {
+    "id": 9,
+    "name": "Andrzej",
+    "surname": "Dąbrowski",
+    "phone": "+48 284293659",
+    "email": "andrzej.dabrowski@example.com",
+    "adres": {
+      "zipcode": "10-009",
+      "city": "Olsztyn",
+      "street": "Jesionowa",
+      "houseNumber": "13",
+      "flatNumber": "8"
     },
-    {
-        "id": 10,
-        "name": "Marcin",
-        "surname": "Wójcik",
-        "phone": "+48 202668704"
+    "OWES": "Nie",
+    "typeOfContract": "Umowa o pracę",
+    "workingTime": "Cały etat"
+  },
+  {
+    "id": 10,
+    "name": "Marcin",
+    "surname": "Wójcik",
+    "phone": "+48 202668704",
+    "email": "marcin.wojcik@example.com",
+    "adres": {
+      "zipcode": "50-010",
+      "city": "Wrocław",
+      "street": "Modrzewiowa",
+      "houseNumber": "3",
+      "flatNumber": "9"
     },
-    {
-        "id": 11,
-        "name": "Adam",
-        "surname": "Michałowski",
-        "phone": "+48 139199867"
+    "OWES": "Tak",
+    "typeOfContract": "Umowa zlecenie",
+    "workingTime": "Cały etat"
+  },
+  {
+    "id": 11,
+    "name": "Adam",
+    "surname": "Michałowski",
+    "phone": "+48 139199867",
+    "email": "adam.michalowski@example.com",
+    "adres": {
+      "zipcode": "35-011",
+      "city": "Rzeszów",
+      "street": "Topolowa",
+      "houseNumber": "21",
+      "flatNumber": "5"
     },
-    {
-        "id": 12,
-        "name": "Zofia",
-        "surname": "Wójcik",
-        "phone": "+48 204453045"
+    "OWES": "Nie",
+    "typeOfContract": "Umowa o pracę",
+    "workingTime": "1/2 etatu"
+  },
+  {
+    "id": 12,
+    "name": "Zofia",
+    "surname": "Wójcik",
+    "phone": "+48 204453045",
+    "email": "zofia.wojcik@example.com",
+    "adres": {
+      "zipcode": "15-012",
+      "city": "Białystok",
+      "street": "Kasztanowa",
+      "houseNumber": "30",
+      "flatNumber": "12"
     },
-    {
-        "id": 13,
-        "name": "Piotr",
-        "surname": "Kowalski",
-        "phone": "+48 233275939"
+    "OWES": "Tak",
+    "typeOfContract": "Umowa zlecenie",
+    "workingTime": "Cały etat"
+  },
+  {
+    "id": 13,
+    "name": "Piotr",
+    "surname": "Kowalski",
+    "phone": "+48 233275939",
+    "email": "piotr.kowalski@example.com",
+    "adres": {
+      "zipcode": "45-013",
+      "city": "Opole",
+      "street": "Lipowa",
+      "houseNumber": "17",
+      "flatNumber": "4"
     },
-    {
-        "id": 14,
-        "name": "Andrzej",
-        "surname": "Jankowski",
-        "phone": "+48 106582436"
+    "OWES": "Nie",
+    "typeOfContract": "Umowa o pracę",
+    "workingTime": "Cały etat"
+  },
+  {
+    "id": 14,
+    "name": "Andrzej",
+    "surname": "Jankowski",
+    "phone": "+48 106582436",
+    "email": "andrzej.jankowski@example.com",
+    "adres": {
+      "zipcode": "55-014",
+      "city": "Legnica",
+      "street": "Brzozowa",
+      "houseNumber": "5",
+      "flatNumber": "6"
     },
-    {
-        "id": 15,
-        "name": "Adam",
-        "surname": "Grabowski",
-        "phone": "+48 254987608"
+    "OWES": "Tak",
+    "typeOfContract": "Umowa zlecenie",
+    "workingTime": "1/2 etatu"
+  },
+  {
+    "id": 15,
+    "name": "Adam",
+    "surname": "Grabowski",
+    "phone": "+48 254987608",
+    "email": "adam.grabowski@example.com",
+    "adres": {
+      "zipcode": "65-015",
+      "city": "Zielona Góra",
+      "street": "Dębowa",
+      "houseNumber": "14",
+      "flatNumber": "7"
     },
-    {
-        "id": 16,
-        "name": "Marcin",
-        "surname": "Wójcik",
-        "phone": "+48 766573044"
+    "OWES": "Nie",
+    "typeOfContract": "Umowa o pracę",
+    "workingTime": "Cały etat"
+  },
+  {
+    "id": 16,
+    "name": "Marcin",
+    "surname": "Wójcik",
+    "phone": "+48 766573044",
+    "email": "marcin.wojcik2@example.com",
+    "adres": {
+      "zipcode": "85-016",
+      "city": "Bydgoszcz",
+      "street": "Jesionowa",
+      "houseNumber": "9",
+      "flatNumber": "3"
     },
-    {
-        "id": 17,
-        "name": "Adam",
-        "surname": "Lewandowski",
-        "phone": "+48 740375772"
+    "OWES": "Tak",
+    "typeOfContract": "Umowa zlecenie",
+    "workingTime": "1/2 etatu"
+  },
+  {
+    "id": 17,
+    "name": "Adam",
+    "surname": "Lewandowski",
+    "phone": "+48 740375772",
+    "email": "adam.lewandowski@example.com",
+    "adres": {
+      "zipcode": "95-017",
+      "city": "Łódź",
+      "street": "Sosnowa",
+      "houseNumber": "25",
+      "flatNumber": "9"
     },
-    {
-        "id": 18,
-        "name": "Jan",
-        "surname": "Pietrzak",
-        "phone": "+48 556033456"
+    "OWES": "Nie",
+    "typeOfContract": "Umowa o pracę",
+    "workingTime": "Cały etat"
+  },
+  {
+    "id": 18,
+    "name": "Jan",
+    "surname": "Pietrzak",
+    "phone": "+48 556033456",
+    "email": "jan.pietrzak@example.com",
+    "adres": {
+      "zipcode": "25-018",
+      "city": "Kielce",
+      "street": "Modrzewiowa",
+      "houseNumber": "8",
+      "flatNumber": "2"
     },
-    {
-        "id": 19,
-        "name": "Jan",
-        "surname": "Kowalski",
-        "phone": "+48 730655404"
+    "OWES": "Tak",
+    "typeOfContract": "Umowa zlecenie",
+    "workingTime": "Cały etat"
+  },
+  {
+    "id": 19,
+    "name": "Jan",
+    "surname": "Kowalski",
+    "phone": "+48 730655404",
+    "email": "jan.kowalski@example.com",
+    "adres": {
+      "zipcode": "35-019",
+      "city": "Tarnów",
+      "street": "Parkowa",
+      "houseNumber": "16",
+      "flatNumber": "5"
     },
-    {
-        "id": 20,
-        "name": "Marcin",
-        "surname": "Zieliński",
-        "phone": "+48 153506981"
-    }
+    "OWES": "Nie",
+    "typeOfContract": "Umowa o pracę",
+    "workingTime": "1/2 etatu"
+  },
+  {
+    "id": 20,
+    "name": "Marcin",
+    "surname": "Zieliński",
+    "phone": "+48 153506981",
+    "email": "marcin.zielinski@example.com",
+    "adres": {
+      "zipcode": "75-020",
+      "city": "Koszalin",
+      "street": "Wiśniowa",
+      "houseNumber": "11",
+      "flatNumber": "6"
+    },
+    "OWES": "Tak",
+    "typeOfContract": "Umowa zlecenie",
+    "workingTime": "1/2 etatu"
+  }
 ]

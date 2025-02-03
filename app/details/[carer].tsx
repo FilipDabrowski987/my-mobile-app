@@ -29,6 +29,28 @@ export default function DetailsCarerScreen() {
       .catch((err) => console.error("Błąd przy próbie dzwonienia", err));
   };
 
+  const formatPhoneNumber = (phoneNumber: string) => {
+    const prefix = phoneNumber.slice(0, 4); // Pierwsze 4 znaki to +48
+    const numberPart = phoneNumber.slice(4); // Reszta numeru
+    const formattedNumber = `${prefix}${numberPart.slice(
+      0,
+      3
+    )} ${numberPart.slice(3, 6)} ${numberPart.slice(6, 9)}`;
+    return formattedNumber;
+  };
+
+  const renderAddress = (adres: TCarer["adres"]) => {
+    if (adres.city && adres.houseNumber) {
+      if (adres.street && adres.flatNumber) {
+        return `ul. ${adres.street} ${adres.houseNumber} m.${adres.flatNumber}\n${adres.zipcode} ${adres.city}`;
+      } else if (adres.street) {
+        return `ul. ${adres.street} ${adres.houseNumber}\n${adres.zipcode} ${adres.city}`;
+      }
+      return `${adres.zipcode} ${adres.city} ${adres.houseNumber}`;
+    }
+    return "Brak pełnych danych adresowych";
+  };
+
   return (
     <View style={styles.container}>
       <Text style={styles.header}>Informacje o opiekunie </Text>
@@ -39,11 +61,24 @@ export default function DetailsCarerScreen() {
               {carer.name} {carer.surname}
             </Text>
             <View style={styles.phoneContainer}>
-              <Text style={styles.phone}>{carer.phone}</Text>
+              <Text style={styles.phone}>{formatPhoneNumber(carer.phone)}</Text>
               <View>
                 <Button title="Zadzwoń" onPress={() => makeCall(carer.phone)} />
                 {/*trzeba nadać uprawnienia */}
               </View>
+            </View>
+            <View style={styles.detailsContainer}>
+              <Text style={styles.details}>{renderAddress(carer.adres)}</Text>
+              <Text style={styles.details}>{carer.email}</Text>
+              <Text style={styles.details}>
+                Zatrudnienie z OWES: {carer.OWES}
+              </Text>
+              <Text style={styles.details}>
+                Rodzaj zatrudnienia: {carer.typeOfContract}
+              </Text>
+              <Text style={styles.details}>
+                Wymiar czasu pracy: {carer.workingTime}
+              </Text>
             </View>
           </View>
 
@@ -105,6 +140,15 @@ const styles = StyleSheet.create({
   phone: {
     fontSize: 30,
     marginBottom: 30,
+  },
+  detailsContainer: {
+    gap: 10,
+    marginBottom: 20,
+    alignItems: "center",
+    textAlign: "center",
+  },
+  details: {
+    fontSize: 16,
   },
   buttonContainer: {
     gap: 20,
