@@ -1,0 +1,17 @@
+[
+  {
+    "id": 1,
+    "name": "Adam",
+    "surname": "Kaczmarek",
+    "phone": "+48 761 310 190",
+    "adres": {
+      "zipcode": "41-200",
+      "city": "Lublin",
+      "street": "Zielona",
+      "houseNumber": "51",
+      "flatNumber": "13"
+    },
+    "degreeOfDisability": "Lekki",
+    "isLyingDownPerson": "Nie"
+}
+]

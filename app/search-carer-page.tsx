@@ -10,10 +10,11 @@ import {
 } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { useEffect, useState } from "react";
+import { TCarer } from "./(tabs)";
 
 export default function SearchCarerScreen() {
-  const [carers, setCarers] = useState<any[]>([]);
-  const [filteredCarers, setFilteredCarers] = useState<any[]>([]);
+  const [carers, setCarers] = useState<TCarer[]>([]);
+  const [filteredCarers, setFilteredCarers] = useState<TCarer[]>([]);
   const [loading, setLoading] = useState<boolean>(true);
   const [searchQuery, setSearchQuery] = useState<string>("");
   const router = useRouter();

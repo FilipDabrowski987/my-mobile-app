@@ -5,7 +5,6 @@ import { Picker } from "@react-native-picker/picker";
 export default function AdditionalPatientOptionsForm() {
   const [degreeOfDisability, setDegreeOfDisability] = useState();
   const [isLyingDownPerson, setLyingDownPerson] = useState();
-  const [workingTime, setWorkingTime] = useState();
 
   return (
     <View style={styles.inputContainer}>

@@ -20,6 +20,22 @@ export type TCarer = {
   workingTime: string;
 };
 
+export type TPatient = {
+  id: number;
+  name: string;
+  surname: string;
+  phone: string;
+  adres: {
+    zipcode: string;
+    city: string;
+    street: string;
+    houseNumber: string;
+    flatNumber: string;
+  };
+  degreeOfDisability: string;
+  isLyingDownPerson: string;
+};
+
 export default function HomeScreen() {
   const router = useRouter();
   return (
