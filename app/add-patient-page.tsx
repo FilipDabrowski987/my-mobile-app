@@ -1,3 +1,4 @@
+import AdditionalPatientOptionsForm from "@/components/AdditionalPatientOptionsForm";
 import AdresForm from "@/components/AdresForm";
 import ContactPersonForm from "@/components/ContactPersonForm";
 import NameForm from "@/components/NameForm";
@@ -32,19 +33,7 @@ export default function AddPatientScreen() {
           <Text style={styles.header}>Dodaj podopiecznego</Text>
           <NameForm />
           <AdresForm />
-
-          <View style={styles.checkboxContainer}>
-            <Checkbox
-              value={isLyingDownPerson}
-              onValueChange={setLyingDownPerson}
-              color={isLyingDownPerson ? "#007AFF" : undefined}
-            />
-            <Text>Osoba leżąca</Text>
-          </View>
-
-          <Text>Dodać:</Text>
-          <Text>Stopień niepełnosprawności</Text>
-
+          <AdditionalPatientOptionsForm />
           <View style={styles.checkboxContainer}>
             <Checkbox
               value={isSelected}

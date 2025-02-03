@@ -38,7 +38,7 @@ export default function AdresForm() {
       />
 
       <View style={styles.inputHouseNumberContainer}>
-        <View>
+        <View style={styles.inputHouseNumberView}>
           <Text style={styles.label}>Nr domu:</Text>
           <TextInput
             style={styles.inputHouseNumber}
@@ -49,7 +49,7 @@ export default function AdresForm() {
           />
         </View>
 
-        <View>
+        <View style={styles.inputHouseNumberView}>
           <Text style={styles.label}>Nr mieszkania:</Text>
           <TextInput
             style={styles.inputHouseNumber}
@@ -91,6 +91,9 @@ const styles = StyleSheet.create({
     width: "80%",
     justifyContent: "space-between",
     gap: 10,
+  },
+  inputHouseNumberView: {
+    width: "48%",
   },
   inputHouseNumber: {
     height: 40,
