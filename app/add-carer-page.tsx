@@ -1,3 +1,4 @@
+import AdditionalOptionsForm from "@/components/AdditionalOptionsForm";
 import AdresForm from "@/components/AdresForm";
 import EmailForm from "@/components/EmailForm";
 import NameForm from "@/components/NameForm";
@@ -28,6 +29,7 @@ export default function AddCarerScreen() {
           <NameForm />
           <EmailForm />
           <AdresForm />
+          <AdditionalOptionsForm />
           <View style={styles.checkboxContainer}>
             <Checkbox
               value={isSelected}
