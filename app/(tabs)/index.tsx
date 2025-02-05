@@ -34,7 +34,14 @@ export type TPatient = {
   };
   degreeOfDisability: string;
   isLyingDownPerson: string;
+  contactPersons: TContactPerson[];
   text: string;
+};
+
+export type TContactPerson = {
+  name: string;
+  surname: string;
+  phone: string;
 };
 
 export default function HomeScreen() {

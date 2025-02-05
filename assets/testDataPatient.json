@@ -1,602 +1,817 @@
 [
-    {
-        "id": 1,
-        "name": "Barbara",
-        "surname": "Lewandowski",
-        "phone": "+48 601888187",
-        "adres": {
-            "zipcode": "10-124",
-            "city": "Poznań",
-            "street": "Słoneczna",
-            "houseNumber": "145",
-            "flatNumber": "2"
-        },
-        "degreeOfDisability": "Lekki",
-        "isLyingDownPerson": "Tak"
+  {
+    "id": 1,
+    "name": "Anna",
+    "surname": "Kowalska",
+    "phone": "+48 123456789",
+    "adres": {
+      "zipcode": "00-001",
+      "city": "Warszawa",
+      "street": "Pięciomorgowa",
+      "houseNumber": "10",
+      "flatNumber": "5"
     },
-    {
-        "id": 2,
-        "name": "Joanna",
-        "surname": "Kamiński",
-        "phone": "+48 570700350",
-        "adres": {
-            "zipcode": "66-854",
-            "city": "Szczecin",
-            "street": "Długa",
-            "houseNumber": "132",
-            "flatNumber": "44"
-        },
-        "degreeOfDisability": "Lekki",
-        "isLyingDownPerson": "Tak"
-    },
-    {
-        "id": 3,
-        "name": "Łukasz",
-        "surname": "Zając",
-        "phone": "+48 655751304",
-        "adres": {
-            "zipcode": "97-154",
-            "city": "Warszawa",
-            "street": "Miodowa",
-            "houseNumber": "115",
-            "flatNumber": "6"
-        },
-        "degreeOfDisability": "Umiarkowany",
-        "isLyingDownPerson": "Nie"
-    },
-    {
-        "id": 4,
-        "name": "Aleksander",
-        "surname": "Zając",
-        "phone": "+48 690821960",
-        "adres": {
-            "zipcode": "47-249",
-            "city": "Wrocław",
-            "street": "Ogrodowa",
-            "houseNumber": "34",
-            "flatNumber": "46"
-        },
-        "degreeOfDisability": "Znaczny",
-        "isLyingDownPerson": "Tak"
-    },
-    {
-        "id": 5,
-        "name": "Piotr",
-        "surname": "Dąbrowski",
-        "phone": "+48 644312376",
-        "adres": {
-            "zipcode": "55-959",
-            "city": "Łódź",
-            "street": "Słoneczna",
-            "houseNumber": "110",
-            "flatNumber": "28"
-        },
-        "degreeOfDisability": "Umiarkowany",
-        "isLyingDownPerson": "Nie"
-    },
-    {
-        "id": 6,
-        "name": "Sylwia",
-        "surname": "Wójcik",
-        "phone": "+48 622364920",
-        "adres": {
-            "zipcode": "61-555",
-            "city": "Gdańsk",
-            "street": "Szkolna",
-            "houseNumber": "61",
-            "flatNumber": "35"
-        },
-        "degreeOfDisability": "Lekki",
-        "isLyingDownPerson": "Nie"
-    },
-    {
-        "id": 7,
-        "name": "Norbert",
-        "surname": "Zielińska",
-        "phone": "+48 780256148",
-        "adres": {
-            "zipcode": "36-809",
-            "city": "Warszawa",
-            "street": "Leśna",
-            "houseNumber": "66",
-            "flatNumber": "40"
-        },
-        "degreeOfDisability": "Znaczny",
-        "isLyingDownPerson": "Nie"
-    },
-    {
-        "id": 8,
-        "name": "Łukasz",
-        "surname": "Kamiński",
-        "phone": "+48 685624080",
-        "adres": {
-            "zipcode": "91-994",
-            "city": "Szczecin",
-            "street": "Miodowa",
-            "houseNumber": "96",
-            "flatNumber": "16"
-        },
-        "degreeOfDisability": "Znaczny",
-        "isLyingDownPerson": "Tak"
-    },
-    {
-        "id": 9,
+    "degreeOfDisability": "Umiarkowany",
+    "isLyingDownPerson": "Nie",
+    "contactPersons": [
+      {
         "name": "Jan",
-        "surname": "Lis",
-        "phone": "+48 696223244",
-        "adres": {
-            "zipcode": "89-613",
-            "city": "Szczecin",
-            "street": "Bałtycka",
-            "houseNumber": "44",
-            "flatNumber": "28"
-        },
-        "degreeOfDisability": "Umiarkowany",
-        "isLyingDownPerson": "Nie"
+        "surname": "Kowalski",
+        "phone": "+48 987654321"
+      }
+    ],
+    "text": "Pacjentka ma trudności z poruszaniem się."
+  },
+  {
+    "id": 2,
+    "name": "Marek",
+    "surname": "Nowak",
+    "phone": "+48 234567890",
+    "adres": {
+      "zipcode": "00-002",
+      "city": "Kraków",
+      "street": "Wielicka",
+      "houseNumber": "20",
+      "flatNumber": "2"
     },
-    {
-        "id": 10,
-        "name": "Sebastian",
-        "surname": "Jankowski",
-        "phone": "+48 554153335",
-        "adres": {
-            "zipcode": "61-787",
-            "city": "Poznań",
-            "street": "Miodowa",
-            "houseNumber": "107",
-            "flatNumber": "47"
-        },
-        "degreeOfDisability": "Znaczny",
-        "isLyingDownPerson": "Nie"
-    },
-    {
-        "id": 11,
-        "name": "Grzegorz",
-        "surname": "Sadowski",
-        "phone": "+48 837757524",
-        "adres": {
-            "zipcode": "25-784",
-            "city": "Gdańsk",
-            "street": "Leśna",
-            "houseNumber": "26",
-            "flatNumber": "26"
-        },
-        "degreeOfDisability": "Lekki",
-        "isLyingDownPerson": "Nie"
-    },
-    {
-        "id": 12,
-        "name": "Łukasz",
-        "surname": "Zając",
-        "phone": "+48 883328068",
-        "adres": {
-            "zipcode": "78-883",
-            "city": "Łódź",
-            "street": "Ogrodowa",
-            "houseNumber": "118",
-            "flatNumber": "46"
-        },
-        "degreeOfDisability": "Lekki",
-        "isLyingDownPerson": "Nie"
-    },
-    {
-        "id": 13,
-        "name": "Joanna",
-        "surname": "Lis",
-        "phone": "+48 669044009",
-        "adres": {
-            "zipcode": "39-869",
-            "city": "Wrocław",
-            "street": "Zielona",
-            "houseNumber": "56",
-            "flatNumber": "37"
-        },
-        "degreeOfDisability": "Znaczny",
-        "isLyingDownPerson": "Nie"
-    },
-    {
-        "id": 14,
-        "name": "Kamil",
-        "surname": "Szymański",
-        "phone": "+48 864702774",
-        "adres": {
-            "zipcode": "95-195",
-            "city": "Gdańsk",
-            "street": "Bałtycka",
-            "houseNumber": "19",
-            "flatNumber": "43"
-        },
-        "degreeOfDisability": "Lekki",
-        "isLyingDownPerson": "Tak"
-    },
-    {
-        "id": 15,
-        "name": "Katarzyna",
-        "surname": "Wasilewski",
-        "phone": "+48 767017720",
-        "adres": {
-            "zipcode": "13-315",
-            "city": "Warszawa",
-            "street": "Szkolna",
-            "houseNumber": "134",
-            "flatNumber": "7"
-        },
-        "degreeOfDisability": "Znaczny",
-        "isLyingDownPerson": "Tak"
-    },
-    {
-        "id": 16,
-        "name": "Renata",
-        "surname": "Kaczmarek",
-        "phone": "+48 517765303",
-        "adres": {
-            "zipcode": "41-457",
-            "city": "Katowice",
-            "street": "Bałtycka",
-            "houseNumber": "50",
-            "flatNumber": "30"
-        },
-        "degreeOfDisability": "Umiarkowany",
-        "isLyingDownPerson": "Tak"
-    },
-    {
-        "id": 17,
-        "name": "Natalia",
-        "surname": "Zając",
-        "phone": "+48 666554291",
-        "adres": {
-            "zipcode": "59-501",
-            "city": "Warszawa",
-            "street": "Długa",
-            "houseNumber": "142",
-            "flatNumber": "49"
-        },
-        "degreeOfDisability": "Umiarkowany",
-        "isLyingDownPerson": "Nie"
-    },
-    {
-        "id": 18,
-        "name": "Barbara",
-        "surname": "Wiśniewski",
-        "phone": "+48 584213140",
-        "adres": {
-            "zipcode": "94-325",
-            "city": "Bydgoszcz",
-            "street": "Zielona",
-            "houseNumber": "39",
-            "flatNumber": "22"
-        },
-        "degreeOfDisability": "Umiarkowany",
-        "isLyingDownPerson": "Nie"
-    },
-    {
-        "id": 19,
-        "name": "Monika",
-        "surname": "Rutkowski",
-        "phone": "+48 887621122",
-        "adres": {
-            "zipcode": "97-174",
-            "city": "Łódź",
-            "street": "Polna",
-            "houseNumber": "80",
-            "flatNumber": "46"
-        },
-        "degreeOfDisability": "Lekki",
-        "isLyingDownPerson": "Tak"
-    },
-    {
-        "id": 20,
-        "name": "Jan",
-        "surname": "Lewandowski",
-        "phone": "+48 615042313",
-        "adres": {
-            "zipcode": "52-311",
-            "city": "Szczecin",
-            "street": "Bałtycka",
-            "houseNumber": "111",
-            "flatNumber": "45"
-        },
-        "degreeOfDisability": "Znaczny",
-        "isLyingDownPerson": "Nie"
-    },
-    {
-        "id": 21,
-        "name": "Filip",
-        "surname": "Rutkowski",
-        "phone": "+48 514757707",
-        "adres": {
-            "zipcode": "44-792",
-            "city": "Poznań",
-            "street": "Miodowa",
-            "houseNumber": "89",
-            "flatNumber": "27"
-        },
-        "degreeOfDisability": "Znaczny",
-        "isLyingDownPerson": "Nie"
-    },
-    {
-        "id": 22,
-        "name": "Oskar",
-        "surname": "Kamiński",
-        "phone": "+48 509112038",
-        "adres": {
-            "zipcode": "94-930",
-            "city": "Poznań",
-            "street": "Słoneczna",
-            "houseNumber": "142",
-            "flatNumber": "34"
-        },
-        "degreeOfDisability": "Umiarkowany",
-        "isLyingDownPerson": "Tak"
-    },
-    {
-        "id": 23,
-        "name": "Paweł",
-        "surname": "Wasilewski",
-        "phone": "+48 682023328",
-        "adres": {
-            "zipcode": "30-580",
-            "city": "Bydgoszcz",
-            "street": "Dworcowa",
-            "houseNumber": "112",
-            "flatNumber": "17"
-        },
-        "degreeOfDisability": "Lekki",
-        "isLyingDownPerson": "Tak"
-    },
-    {
-        "id": 24,
-        "name": "Urszula",
-        "surname": "Mazur",
-        "phone": "+48 722089693",
-        "adres": {
-            "zipcode": "91-970",
-            "city": "Kraków",
-            "street": "Bałtycka",
-            "houseNumber": "60",
-            "flatNumber": "2"
-        },
-        "degreeOfDisability": "Znaczny",
-        "isLyingDownPerson": "Nie"
-    },
-    {
-        "id": 25,
-        "name": "Oskar",
-        "surname": "Mazur",
-        "phone": "+48 618417810",
-        "adres": {
-            "zipcode": "47-399",
-            "city": "Szczecin",
-            "street": "Ogrodowa",
-            "houseNumber": "93",
-            "flatNumber": "38"
-        },
-        "degreeOfDisability": "Lekki",
-        "isLyingDownPerson": "Tak"
-    },
-    {
-        "id": 26,
-        "name": "Joanna",
-        "surname": "Lis",
-        "phone": "+48 809469635",
-        "adres": {
-            "zipcode": "15-818",
-            "city": "Łódź",
-            "street": "Polna",
-            "houseNumber": "14",
-            "flatNumber": "37"
-        },
-        "degreeOfDisability": "Lekki",
-        "isLyingDownPerson": "Nie"
-    },
-    {
-        "id": 27,
-        "name": "Oskar",
-        "surname": "Zając",
-        "phone": "+48 857833431",
-        "adres": {
-            "zipcode": "13-392",
-            "city": "Lublin",
-            "street": "Długa",
-            "houseNumber": "83",
-            "flatNumber": "5"
-        },
-        "degreeOfDisability": "Umiarkowany",
-        "isLyingDownPerson": "Tak"
-    },
-    {
-        "id": 28,
-        "name": "Katarzyna",
-        "surname": "Mazur",
-        "phone": "+48 778205489",
-        "adres": {
-            "zipcode": "94-975",
-            "city": "Gdańsk",
-            "street": "Słoneczna",
-            "houseNumber": "99",
-            "flatNumber": "48"
-        },
-        "degreeOfDisability": "Znaczny",
-        "isLyingDownPerson": "Nie"
-    },
-    {
-        "id": 29,
-        "name": "Franciszek",
+    "degreeOfDisability": "Znaczny",
+    "isLyingDownPerson": "Tak",
+    "contactPersons": [
+      {
+        "name": "Elżbieta",
         "surname": "Nowak",
-        "phone": "+48 864559729",
-        "adres": {
-            "zipcode": "50-345",
-            "city": "Kraków",
-            "street": "Leśna",
-            "houseNumber": "17",
-            "flatNumber": "26"
-        },
-        "degreeOfDisability": "Znaczny",
-        "isLyingDownPerson": "Nie"
-    },
-    {
-        "id": 30,
-        "name": "Dorota",
-        "surname": "Wasilewski",
-        "phone": "+48 815653804",
-        "adres": {
-            "zipcode": "97-485",
-            "city": "Bydgoszcz",
-            "street": "Słoneczna",
-            "houseNumber": "56",
-            "flatNumber": "30"
-        },
-        "degreeOfDisability": "Znaczny",
-        "isLyingDownPerson": "Nie"
-    },
-    {
-        "id": 31,
-        "name": "Eryk",
-        "surname": "Kamiński",
-        "phone": "+48 610207926",
-        "adres": {
-            "zipcode": "75-320",
-            "city": "Warszawa",
-            "street": "Długa",
-            "houseNumber": "36",
-            "flatNumber": "14"
-        },
-        "degreeOfDisability": "Znaczny",
-        "isLyingDownPerson": "Tak"
-    },
-    {
-        "id": 32,
-        "name": "Wiktor",
-        "surname": "Wiśniewski",
-        "phone": "+48 659775563",
-        "adres": {
-            "zipcode": "82-760",
-            "city": "Lublin",
-            "street": "Ogrodowa",
-            "houseNumber": "89",
-            "flatNumber": "10"
-        },
-        "degreeOfDisability": "Umiarkowany",
-        "isLyingDownPerson": "Tak"
-    },
-    {
-        "id": 33,
-        "name": "Paweł",
-        "surname": "Dąbrowski",
-        "phone": "+48 843626854",
-        "adres": {
-            "zipcode": "54-895",
-            "city": "Gdańsk",
-            "street": "Długa",
-            "houseNumber": "22",
-            "flatNumber": "3"
-        },
-        "degreeOfDisability": "Znaczny",
-        "isLyingDownPerson": "Nie"
-    },
-    {
-        "id": 34,
-        "name": "Gabriela",
-        "surname": "Dąbrowski",
-        "phone": "+48 664501660",
-        "adres": {
-            "zipcode": "49-284",
-            "city": "Kraków",
-            "street": "Długa",
-            "houseNumber": "82",
-            "flatNumber": "28"
-        },
-        "degreeOfDisability": "Znaczny",
-        "isLyingDownPerson": "Tak"
-    },
-    {
-        "id": 35,
-        "name": "Teresa",
-        "surname": "Lewandowski",
-        "phone": "+48 730986204",
-        "adres": {
-            "zipcode": "69-735",
-            "city": "Poznań",
-            "street": "Długa",
-            "houseNumber": "45",
-            "flatNumber": "4"
-        },
-        "degreeOfDisability": "Lekki",
-        "isLyingDownPerson": "Tak"
-    },
-    {
-        "id": 36,
-        "name": "Jan",
-        "surname": "Lis",
-        "phone": "+48 531614669",
-        "adres": {
-            "zipcode": "74-914",
-            "city": "Lublin",
-            "street": "Długa",
-            "houseNumber": "15",
-            "flatNumber": "7"
-        },
-        "degreeOfDisability": "Lekki",
-        "isLyingDownPerson": "Nie"
-    },
-    {
-        "id": 37,
-        "name": "Filip",
-        "surname": "Kaczmarek",
-        "phone": "+48 808457667",
-        "adres": {
-            "zipcode": "54-446",
-            "city": "Katowice",
-            "street": "Bałtycka",
-            "houseNumber": "66",
-            "flatNumber": "32"
-        },
-        "degreeOfDisability": "Znaczny",
-        "isLyingDownPerson": "Tak"
-    },
-    {
-        "id": 38,
-        "name": "Urszula",
-        "surname": "Górska",
-        "phone": "+48 690237414",
-        "adres": {
-            "zipcode": "94-341",
-            "city": "Lublin",
-            "street": "Dworcowa",
-            "houseNumber": "9",
-            "flatNumber": "4"
-        },
-        "degreeOfDisability": "Lekki",
-        "isLyingDownPerson": "Tak"
-    },
-    {
-        "id": 39,
-        "name": "Beata",
-        "surname": "Kamiński",
-        "phone": "+48 537601170",
-        "adres": {
-            "zipcode": "48-254",
-            "city": "Poznań",
-            "street": "Szkolna",
-            "houseNumber": "121",
-            "flatNumber": "28"
-        },
-        "degreeOfDisability": "Lekki",
-        "isLyingDownPerson": "Tak"
-    },
-    {
-        "id": 40,
-        "name": "Eryk",
+        "phone": "+48 345678901"
+      },
+      {
+        "name": "Katarzyna",
         "surname": "Wójcik",
-        "phone": "+48 800206049",
-        "adres": {
-            "zipcode": "16-343",
-            "city": "Łódź",
-            "street": "Szkolna",
-            "houseNumber": "4",
-            "flatNumber": "13"
-        },
-        "degreeOfDisability": "Umiarkowany",
-        "isLyingDownPerson": "Tak"
-    }
+        "phone": "+48 456789012"
+      }
+    ],
+    "text": "Wymaga stałej opieki."
+  },
+  {
+    "id": 3,
+    "name": "Paweł",
+    "surname": "Wójcik",
+    "phone": "+48 345678901",
+    "adres": {
+      "zipcode": "00-003",
+      "city": "Gdańsk",
+      "street": "Oliwska",
+      "houseNumber": "15",
+      "flatNumber": "7"
+    },
+    "degreeOfDisability": "Lekki",
+    "isLyingDownPerson": "Nie",
+    
+    "text": "Pacjent radzi sobie samodzielnie, ale potrzebuje wsparcia w niektórych sytuacjach."
+  },
+  {
+    "id": 4,
+    "name": "Zofia",
+    "surname": "Piotrowska",
+    "phone": "+48 456789012",
+    "adres": {
+      "zipcode": "00-004",
+      "city": "Poznań",
+      "street": "Słowiańska",
+      "houseNumber": "8",
+      "flatNumber": "3"
+    },
+    "degreeOfDisability": "Umiarkowany",
+    "isLyingDownPerson": "Nie",
+    "contactPersons": [
+      {
+        "name": "Jacek",
+        "surname": "Piotrowski",
+        "phone": "+48 567890123"
+      },
+      {
+        "name": "Ewa",
+        "surname": "Piotrowska",
+        "phone": "+48 678901234"
+      }
+    ],
+    "text": "Pacjentka potrzebuje pomocy w codziennych czynnościach."
+  },
+  {
+    "id": 5,
+    "name": "Barbara",
+    "surname": "Kaczmarek",
+    "phone": "+48 567890123",
+    "adres": {
+      "zipcode": "00-005",
+      "city": "Wrocław",
+      "street": "Krakowska",
+      "houseNumber": "12",
+      "flatNumber": "4"
+    },
+    "degreeOfDisability": "Znaczny",
+    "isLyingDownPerson": "Tak",
+    "text": "Wymaga stałego nadzoru."
+  },
+  {
+    "id": 6,
+    "name": "Agnieszka",
+    "surname": "Lewandowska",
+    "phone": "+48 678901234",
+    "adres": {
+      "zipcode": "00-006",
+      "city": "Łódź",
+      "street": "Piotrkowska",
+      "houseNumber": "6",
+      "flatNumber": "1"
+    },
+    "degreeOfDisability": "Lekki",
+    "isLyingDownPerson": "Nie",
+    "contactPersons": [
+      {
+        "name": "Adam",
+        "surname": "Lewandowski",
+        "phone": "+48 789012345"
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "name": "Tomasz",
+    "surname": "Zieliński",
+    "phone": "+48 789012345",
+    "adres": {
+      "zipcode": "00-007",
+      "city": "Szczecin",
+      "street": "Gdańska",
+      "houseNumber": "7",
+      "flatNumber": "9"
+    },
+    "degreeOfDisability": "Umiarkowany",
+    "isLyingDownPerson": "Nie",
+    "text": "Potrzebuje pomocy przy wstawaniu z łóżka."
+  },
+  {
+    "id": 8,
+    "name": "Krzysztof",
+    "surname": "Szymański",
+    "phone": "+48 890123456",
+    "adres": {
+      "zipcode": "00-008",
+      "city": "Katowice",
+      "street": "Kościuszki",
+      "houseNumber": "1",
+      "flatNumber": "10"
+    },
+    "degreeOfDisability": "Znaczny",
+    "isLyingDownPerson": "Tak",
+    "contactPersons": [
+      {
+        "name": "Dorota",
+        "surname": "Szymańska",
+        "phone": "+48 901234567"
+      },
+      {
+        "name": "Andrzej",
+        "surname": "Dąbrowski",
+        "phone": "+48 234567890"
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "name": "Monika",
+    "surname": "Dąbrowska",
+    "phone": "+48 901234567",
+    "adres": {
+      "zipcode": "00-009",
+      "city": "Bydgoszcz",
+      "street": "Główna",
+      "houseNumber": "9",
+      "flatNumber": "6"
+    },
+    "degreeOfDisability": "Lekki",
+    "isLyingDownPerson": "Nie"
+  },
+  {
+    "id": 10,
+    "name": "Alicja",
+    "surname": "Kwiatkowska",
+    "phone": "+48 234567890",
+    "adres": {
+      "zipcode": "00-010",
+      "city": "Lublin",
+      "street": "Wyszyńskiego",
+      "houseNumber": "4",
+      "flatNumber": "2"
+    },
+    "degreeOfDisability": "Umiarkowany",
+    "isLyingDownPerson": "Nie",
+    "contactPersons": [
+      {
+        "name": "Janusz",
+        "surname": "Kwiatkowski",
+        "phone": "+48 567890123"
+      }
+    ],
+    "text": "Pacjentka jest w trakcie rehabilitacji."
+  },
+  {
+    "id": 11,
+    "name": "Jarosław",
+    "surname": "Krawczyk",
+    "phone": "+48 234567891",
+    "adres": {
+      "zipcode": "00-011",
+      "city": "Olsztyn",
+      "street": "Sienkiewicza",
+      "houseNumber": "17",
+      "flatNumber": "5"
+    },
+    "degreeOfDisability": "Znaczny",
+    "isLyingDownPerson": "Tak"
+  },
+  {
+    "id": 12,
+    "name": "Julia",
+    "surname": "Nowicka",
+    "phone": "+48 678901234",
+    "adres": {
+      "zipcode": "00-012",
+      "city": "Rzeszów",
+      "street": "Rejtana",
+      "houseNumber": "11",
+      "flatNumber": "3"
+    },
+    "degreeOfDisability": "Lekki",
+    "isLyingDownPerson": "Nie"
+  },
+  {
+    "id": 13,
+    "name": "Marek",
+    "surname": "Bąk",
+    "phone": "+48 789012345",
+    "adres": {
+      "zipcode": "00-013",
+      "city": "Sosnowiec",
+      "street": "Korfantego",
+      "houseNumber": "13",
+      "flatNumber": "1"
+    },
+    "degreeOfDisability": "Umiarkowany",
+    "isLyingDownPerson": "Nie",
+    "contactPersons": [
+      {
+        "name": "Wojciech",
+        "surname": "Bąk",
+        "phone": "+48 890123456"
+      },
+      {
+        "name": "Maria",
+        "surname": "Bąk",
+        "phone": "+48 901234567"
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "name": "Zbigniew",
+    "surname": "Wojciechowski",
+    "phone": "+48 890123456",
+    "adres": {
+      "zipcode": "00-014",
+      "city": "Opole",
+      "street": "Pocztowa",
+      "houseNumber": "3",
+      "flatNumber": "10"
+    },
+    "degreeOfDisability": "Znaczny",
+    "isLyingDownPerson": "Tak",
+    "contactPersons": [
+      {
+        "name": "Jan",
+        "surname": "Wojciechowski",
+        "phone": "+48 234567890"
+      }
+    ],
+    "text": "Wymaga pomocy w codziennych czynnościach."
+  },
+  {
+    "id": 15,
+    "name": "Kamil",
+    "surname": "Sikora",
+    "phone": "+48 234567890",
+    "adres": {
+      "zipcode": "00-015",
+      "city": "Lublin",
+      "street": "Górska",
+      "houseNumber": "5",
+      "flatNumber": "2"
+    },
+    "degreeOfDisability": "Umiarkowany",
+    "isLyingDownPerson": "Nie"
+  },
+  {
+    "id": 16,
+    "name": "Michał",
+    "surname": "Wiśniewski",
+    "phone": "+48 345678901",
+    "adres": {
+      "zipcode": "00-016",
+      "city": "Szczecin",
+      "street": "Lechitów",
+      "houseNumber": "14",
+      "flatNumber": "4"
+    },
+    "degreeOfDisability": "Lekki",
+    "isLyingDownPerson": "Nie",
+    "contactPersons": [
+      {
+        "name": "Elżbieta",
+        "surname": "Wiśniewska",
+        "phone": "+48 456789012"
+      },
+      {
+        "name": "Maciej",
+        "surname": "Marciniak",
+        "phone": "+48 567890123"
+      }
+    ]
+  },
+  {
+    "id": 17,
+    "name": "Krystyna",
+    "surname": "Marciniak",
+    "phone": "+48 456789012",
+    "adres": {
+      "zipcode": "00-017",
+      "city": "Toruń",
+      "street": "Czarnieckiego",
+      "houseNumber": "5",
+      "flatNumber": "7"
+    },
+    "degreeOfDisability": "Umiarkowany",
+    "isLyingDownPerson": "Nie",
+    "text": "Pacjentka ma problemy z poruszaniem się na dużych odległościach."
+  },
+  {
+    "id": 18,
+    "name": "Szymon",
+    "surname": "Majewski",
+    "phone": "+48 567890123",
+    "adres": {
+      "zipcode": "00-018",
+      "city": "Gdańsk",
+      "street": "Zielona",
+      "houseNumber": "8",
+      "flatNumber": "2"
+    },
+    "degreeOfDisability": "Znaczny",
+    "isLyingDownPerson": "Tak",
+    "contactPersons": [
+      {
+        "name": "Ewa",
+        "surname": "Majewska",
+        "phone": "+48 678901234"
+      }
+    ],
+    "text": "Wymaga stałej pomocy w codziennych czynnościach."
+  },
+  {
+    "id": 19,
+    "name": "Iwona",
+    "surname": "Jankowska",
+    "phone": "+48 678901234",
+    "adres": {
+      "zipcode": "00-019",
+      "city": "Słupsk",
+      "street": "Wileńska",
+      "houseNumber": "20",
+      "flatNumber": "1"
+    },
+    "degreeOfDisability": "Umiarkowany",
+    "isLyingDownPerson": "Nie",
+    "contactPersons": [
+      {
+        "name": "Andrzej",
+        "surname": "Jankowski",
+        "phone": "+48 789012345"
+      }
+    ]
+  },
+  {
+    "id": 20,
+    "name": "Leszek",
+    "surname": "Kowalczyk",
+    "phone": "+48 789012345",
+    "adres": {
+      "zipcode": "00-020",
+      "city": "Zielona Góra",
+      "street": "Kościuszki",
+      "houseNumber": "2",
+      "flatNumber": "5"
+    },
+    "degreeOfDisability": "Lekki",
+    "isLyingDownPerson": "Nie"
+  },
+  {
+    "id": 21,
+    "name": "Monika",
+    "surname": "Jeziorna",
+    "phone": "+48 890123456",
+    "adres": {
+      "zipcode": "00-021",
+      "city": "Białystok",
+      "street": "Górska",
+      "houseNumber": "1",
+      "flatNumber": "6"
+    },
+    "degreeOfDisability": "Znaczny",
+    "isLyingDownPerson": "Tak",
+    "contactPersons": [
+      {
+        "name": "Tomasz",
+        "surname": "Jeziorny",
+        "phone": "+48 901234567"
+      },
+      {
+        "name": "Beata",
+        "surname": "Górska",
+        "phone": "+48 234567890"
+      }
+    ],
+    "text": "Pacjentka wymaga całkowitej opieki, jest zależna od innych."
+  },
+  {
+    "id": 22,
+    "name": "Artur",
+    "surname": "Górski",
+    "phone": "+48 901234567",
+    "adres": {
+      "zipcode": "00-022",
+      "city": "Gorzów Wielkopolski",
+      "street": "Kwiatowa",
+      "houseNumber": "25",
+      "flatNumber": "8"
+    },
+    "degreeOfDisability": "Lekki",
+    "isLyingDownPerson": "Nie"
+  },
+  {
+    "id": 23,
+    "name": "Katarzyna",
+    "surname": "Czarnecka",
+    "phone": "+48 234567890",
+    "adres": {
+      "zipcode": "00-023",
+      "city": "Kielce",
+      "street": "Krótka",
+      "houseNumber": "9",
+      "flatNumber": "4"
+    },
+    "degreeOfDisability": "Umiarkowany",
+    "isLyingDownPerson": "Nie",
+    "contactPersons": [
+      {
+        "name": "Waldemar",
+        "surname": "Czarniecki",
+        "phone": "+48 345678901"
+      }
+    ]
+  },
+  {
+    "id": 24,
+    "name": "Wojciech",
+    "surname": "Adamczyk",
+    "phone": "+48 345678901",
+    "adres": {
+      "zipcode": "00-024",
+      "city": "Rzeszów",
+      "street": "Nowa",
+      "houseNumber": "4",
+      "flatNumber": "10"
+    },
+    "degreeOfDisability": "Znaczny",
+    "isLyingDownPerson": "Tak"
+  },
+  {
+    "id": 25,
+    "name": "Ewa",
+    "surname": "Rogalska",
+    "phone": "+48 456789012",
+    "adres": {
+      "zipcode": "00-025",
+      "city": "Koszalin",
+      "street": "Morska",
+      "houseNumber": "15",
+      "flatNumber": "2"
+    },
+    "degreeOfDisability": "Umiarkowany",
+    "isLyingDownPerson": "Nie"
+  },
+  {
+    "id": 26,
+    "name": "Aneta",
+    "surname": "Bielawska",
+    "phone": "+48 567890123",
+    "adres": {
+      "zipcode": "00-026",
+      "city": "Płock",
+      "street": "Mickiewicza",
+      "houseNumber": "16",
+      "flatNumber": "8"
+    },
+    "degreeOfDisability": "Lekki",
+    "isLyingDownPerson": "Nie",
+    "contactPersons": [
+      {
+        "name": "Łukasz",
+        "surname": "Bielawski",
+        "phone": "+48 678901234"
+      }
+    ]
+  },
+  {
+    "id": 27,
+    "name": "Karol",
+    "surname": "Nowakowski",
+    "phone": "+48 678901234",
+    "adres": {
+      "zipcode": "00-027",
+      "city": "Bielsko-Biała",
+      "street": "Sikorskiego",
+      "houseNumber": "7",
+      "flatNumber": "3"
+    },
+    "degreeOfDisability": "Umiarkowany",
+    "isLyingDownPerson": "Nie",
+    "contactPersons": [
+      {
+        "name": "Janusz",
+        "surname": "Nowakowski",
+        "phone": "+48 789012345"
+      }
+    ]
+  },
+  {
+    "id": 28,
+    "name": "Ewa",
+    "surname": "Żuraw",
+    "phone": "+48 789012345",
+    "adres": {
+      "zipcode": "00-028",
+      "city": "Tarnów",
+      "street": "Sienkiewicza",
+      "houseNumber": "10",
+      "flatNumber": "4"
+    },
+    "degreeOfDisability": "Znaczny",
+    "isLyingDownPerson": "Tak",
+    "text": "Pacjentka wymaga pomocy przez całą dobę."
+  },
+  {
+    "id": 29,
+    "name": "Dorota",
+    "surname": "Lewandowska",
+    "phone": "+48 890123456",
+    "adres": {
+      "zipcode": "00-029",
+      "city": "Radom",
+      "street": "Kilińskiego",
+      "houseNumber": "3",
+      "flatNumber": "9"
+    },
+    "degreeOfDisability": "Lekki",
+    "isLyingDownPerson": "Nie",
+    "contactPersons": [
+      {
+        "name": "Piotr",
+        "surname": "Lewandowski",
+        "phone": "+48 901234567"
+      }
+    ]
+  },
+  {
+    "id": 30,
+    "name": "Barbara",
+    "surname": "Sikorska",
+    "phone": "+48 901234567",
+    "adres": {
+      "zipcode": "00-030",
+      "city": "Gdynia",
+      "street": "Witosa",
+      "houseNumber": "12",
+      "flatNumber": "2"
+    },
+    "degreeOfDisability": "Umiarkowany",
+    "isLyingDownPerson": "Nie",
+    "contactPersons": [
+      {
+        "name": "Marek",
+        "surname": "Sikorski",
+        "phone": "+48 234567890"
+      },
+      {
+        "name": "Paweł",
+        "surname": "Kowalski",
+        "phone": "+48 345678901"
+      },
+      {
+        "name": "Beata",
+        "surname": "Czajka",
+        "phone": "+48 456789012"
+      }
+    ],
+    "text": "Wymaga całodobowej opieki, nie porusza się samodzielnie."
+  },
+  {
+    "id": 31,
+    "name": "Alicja",
+    "surname": "Kowalska",
+    "phone": "+48 234567890",
+    "adres": {
+      "zipcode": "00-031",
+      "city": "Olsztyn",
+      "street": "Młyńska",
+      "houseNumber": "6",
+      "flatNumber": "7"
+    },
+    "degreeOfDisability": "Znaczny",
+    "isLyingDownPerson": "Tak"
+  },
+  {
+    "id": 32,
+    "name": "Rafał",
+    "surname": "Czajka",
+    "phone": "+48 345678901",
+    "adres": {
+      "zipcode": "00-032",
+      "city": "Elbląg",
+      "street": "Pięciomorgowa",
+      "houseNumber": "21",
+      "flatNumber": "4"
+    },
+    "degreeOfDisability": "Lekki",
+    "isLyingDownPerson": "Nie"
+  },
+  {
+    "id": 33,
+    "name": "Natalia",
+    "surname": "Wróbel",
+    "phone": "+48 456789012",
+    "adres": {
+      "zipcode": "00-033",
+      "city": "Bydgoszcz",
+      "street": "Tarnobrzeg",
+      "houseNumber": "19",
+      "flatNumber": "1"
+    },
+    "degreeOfDisability": "Umiarkowany",
+    "isLyingDownPerson": "Nie",
+    "contactPersons": [
+      {
+        "name": "Jakub",
+        "surname": "Wróbel",
+        "phone": "+48 567890123"
+      }
+    ]
+  },
+  {
+    "id": 34,
+    "name": "Patryk",
+    "surname": "Kamiński",
+    "phone": "+48 567890123",
+    "adres": {
+      "zipcode": "00-034",
+      "city": "Świnoujście",
+      "street": "Reymonta",
+      "houseNumber": "13",
+      "flatNumber": "8"
+    },
+    "degreeOfDisability": "Znaczny",
+    "isLyingDownPerson": "Tak",
+    "contactPersons": [
+      {
+        "name": "Maja",
+        "surname": "Kamińska",
+        "phone": "+48 678901234"
+      }
+    ],
+    "text": "Wymaga całodobowej opieki, nie porusza się samodzielnie."
+  },
+  {
+    "id": 35,
+    "name": "Zofia",
+    "surname": "Kołodziej",
+    "phone": "+48 678901234",
+    "adres": {
+      "zipcode": "00-035",
+      "city": "Opole",
+      "street": "Karola Miarki",
+      "houseNumber": "24",
+      "flatNumber": "9"
+    },
+    "degreeOfDisability": "Lekki",
+    "isLyingDownPerson": "Nie"
+  },
+  {
+    "id": 36,
+    "name": "Monika",
+    "surname": "Pawlak",
+    "phone": "+48 789012345",
+    "adres": {
+      "zipcode": "00-036",
+      "city": "Siedlce",
+      "street": "Długa",
+      "houseNumber": "18",
+      "flatNumber": "6"
+    },
+    "degreeOfDisability": "Umiarkowany",
+    "isLyingDownPerson": "Nie"
+  },
+  {
+    "id": 37,
+    "name": "Piotr",
+    "surname": "Borowski",
+    "phone": "+48 890123456",
+    "adres": {
+      "zipcode": "00-037",
+      "city": "Tychy",
+      "street": "Korfantego",
+      "houseNumber": "26",
+      "flatNumber": "2"
+    },
+    "degreeOfDisability": "Znaczny",
+    "isLyingDownPerson": "Tak",
+    "contactPersons": [
+      {
+        "name": "Anna",
+        "surname": "Borowska",
+        "phone": "+48 901234567"
+      },
+      {
+        "name": "Marek",
+        "surname": "Pawlak",
+        "phone": "+48 890123456"
+      }
+    ],
+    "text": "Wymaga pomocy przy codziennych czynnościach."
+  },
+  {
+    "id": 38,
+    "name": "Krzysztof",
+    "surname": "Nowicki",
+    "phone": "+48 901234567",
+    "adres": {
+      "zipcode": "00-038",
+      "city": "Kalisz",
+      "street": "Wyszyńskiego",
+      "houseNumber": "14",
+      "flatNumber": "5"
+    },
+    "degreeOfDisability": "Lekki",
+    "isLyingDownPerson": "Nie",
+    "contactPersons": [
+      {
+        "name": "Monika",
+        "surname": "Nowicka",
+        "phone": "+48 234567890"
+      }
+    ]
+  },
+  {
+    "id": 39,
+    "name": "Julita",
+    "surname": "Nawrocka",
+    "phone": "+48 234567890",
+    "adres": {
+      "zipcode": "00-039",
+      "city": "Gorzów Wielkopolski",
+      "street": "Reja",
+      "houseNumber": "9",
+      "flatNumber": "4"
+    },
+    "degreeOfDisability": "Umiarkowany",
+    "isLyingDownPerson": "Nie",
+    "contactPersons": [
+      {
+        "name": "Dariusz",
+        "surname": "Nawrocki",
+        "phone": "+48 345678901"
+      }
+    ]
+  },
+  {
+    "id": 40,
+    "name": "Bartosz",
+    "surname": "Sienkiewicz",
+    "phone": "+48 345678901",
+    "adres": {
+      "zipcode": "00-040",
+      "city": "Włocławek",
+      "street": "Gorzysława",
+      "houseNumber": "8",
+      "flatNumber": "10"
+    },
+    "degreeOfDisability": "Znaczny",
+    "isLyingDownPerson": "Tak"
+  }
 ]

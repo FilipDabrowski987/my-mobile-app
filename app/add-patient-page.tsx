@@ -77,10 +77,10 @@ export default function AddPatientScreen() {
           )}
 
           <View style={styles.inputContainer}>
-            <Text style={styles.label}>Dodaj notatkę:</Text>
+            <Text style={styles.label}>Dodatkowe informacje:</Text>
             <TextInput
               style={styles.input}
-              placeholder="Wpisz notatkę..."
+              placeholder="Dodaj notatkę..."
               value={text}
               onChangeText={setText}
               multiline
