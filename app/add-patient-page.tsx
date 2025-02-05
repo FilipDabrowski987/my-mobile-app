@@ -77,7 +77,7 @@ export default function AddPatientScreen() {
           )}
 
           <View style={styles.inputContainer}>
-            <Text style={styles.label}>Dodatkowe informacje:</Text>
+            <Text style={styles.label}>Informacje dodatkowe:</Text>
             <TextInput
               style={styles.input}
               placeholder="Dodaj notatkę..."
