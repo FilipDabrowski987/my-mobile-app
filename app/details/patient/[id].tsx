@@ -62,9 +62,9 @@ export default function DetailsPatientScreen() {
   };
 
   return (
-    <ScrollView>
-      <View style={styles.container}>
-        <Text style={styles.header}>Informacje o podopiecznym </Text>
+    <View style={styles.container}>
+      <Text style={styles.header}>Informacje o podopiecznym </Text>
+      <ScrollView>
         {patient ? (
           <View>
             <View style={styles.nameContainer}>
@@ -144,8 +144,8 @@ export default function DetailsPatientScreen() {
           <Button title={"Wróć"} onPress={() => router.back()} />
         </View>
         {patient && <Text>ID: {patient.id}</Text>}
-      </View>
-    </ScrollView>
+      </ScrollView>
+    </View>
   );
 }
 
