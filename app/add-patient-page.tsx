@@ -5,13 +5,20 @@ import NameForm from "@/components/NameForm";
 import Checkbox from "expo-checkbox";
 import { useRouter } from "expo-router";
 import { useState } from "react";
-import { Button, ScrollView, StyleSheet, Text, View } from "react-native";
+import {
+  Button,
+  ScrollView,
+  StyleSheet,
+  Text,
+  TextInput,
+  View,
+} from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 
 export default function AddPatientScreen() {
   const [isSelected, setSelection] = useState(false);
-  const [isLyingDownPerson, setLyingDownPerson] = useState(false);
   const [contactPersons, setContactPersons] = useState([1]);
+  const [text, setText] = useState("");
   const router = useRouter();
 
   const handleAddContactPerson = () => {
@@ -69,6 +76,17 @@ export default function AddPatientScreen() {
             </View>
           )}
 
+          <View style={styles.inputContainer}>
+            <Text style={styles.label}>Dodaj notatkę:</Text>
+            <TextInput
+              style={styles.input}
+              placeholder="Wpisz notatkę..."
+              value={text}
+              onChangeText={setText}
+              multiline
+              numberOfLines={6}
+            />
+          </View>
           <View style={styles.buttonContainer}>
             <Button title={"Zapisz"} onPress={handleAddPatient} />
             <Button title={"Wróć"} onPress={() => router.back()} />
@@ -95,6 +113,24 @@ const styles = StyleSheet.create({
     alignItems: "center",
     width: "100%",
     marginBottom: 20,
+  },
+  input: {
+    height: 80,
+    width: "80%",
+    borderWidth: 1,
+    borderColor: "red",
+    borderRadius: 10,
+    padding: 10,
+    backgroundColor: "white",
+    textAlignVertical: "top",
+  },
+  label: {
+    textAlign: "left",
+    justifyContent: "flex-start",
+    width: "80%",
+    marginBottom: 3,
+    fontSize: 14,
+    color: "#333",
   },
   checkboxContainer: {
     flexDirection: "row",

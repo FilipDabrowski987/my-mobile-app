@@ -8,12 +8,35 @@ export default function AdresForm() {
   const [houseNumber, setHouseNumber] = useState("");
   const [flatNumber, setFlatNumber] = useState("");
 
+  const handleZipcodeChange = (text: string) => {
+    let formattedText = text.replace(/\D/g, "");
+
+    if (formattedText.length > 2) {
+      formattedText = `${formattedText.slice(0, 2)}-${formattedText.slice(
+        2,
+        5
+      )}`;
+    }
+
+    setZipcode(formattedText);
+  };
+
+  const handleCityChange = (text: string) => {
+    const formattedText = text.charAt(0).toUpperCase() + text.slice(1);
+    setCity(formattedText);
+  };
+
+  const handleStreetChange = (text: string) => {
+    const formattedText = text.charAt(0).toUpperCase() + text.slice(1);
+    setStreet(formattedText);
+  };
+
   return (
     <View style={styles.inputContainer}>
       <Text style={styles.label}>Kod pocztowy:</Text>
       <TextInput
         style={styles.input}
-        onChangeText={setZipcode}
+        onChangeText={handleZipcodeChange}
         value={zipcode}
         placeholder="Podaj kod pocztowy"
         keyboardType="number-pad"
@@ -22,7 +45,7 @@ export default function AdresForm() {
       <Text style={styles.label}>Miejscowość:</Text>
       <TextInput
         style={styles.input}
-        onChangeText={setCity}
+        onChangeText={handleCityChange}
         value={city}
         placeholder="Podaj miejscowość"
         keyboardType="default"
@@ -31,7 +54,7 @@ export default function AdresForm() {
       <Text style={styles.label}>Ulica:</Text>
       <TextInput
         style={styles.input}
-        onChangeText={setStreet}
+        onChangeText={handleStreetChange}
         value={street}
         placeholder="Podaj ulicę"
         keyboardType="default"
@@ -45,7 +68,7 @@ export default function AdresForm() {
             onChangeText={setHouseNumber}
             value={houseNumber}
             placeholder="Nr domu"
-            keyboardType="numeric"
+            keyboardType="default"
           />
         </View>
 
@@ -56,7 +79,7 @@ export default function AdresForm() {
             onChangeText={setFlatNumber}
             value={flatNumber}
             placeholder="Nr mieszkania"
-            keyboardType="numeric"
+            keyboardType="default"
           />
         </View>
       </View>

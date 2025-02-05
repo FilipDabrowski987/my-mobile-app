@@ -7,6 +7,16 @@ export default function NameForm() {
   const [phone, setPhone] = useState("");
   const [isPhoneFocused, setIsPhoneFocused] = useState(false);
 
+  const handleNameChange = (text: string) => {
+    const formattedText = text.charAt(0).toUpperCase() + text.slice(1);
+    setName(formattedText);
+  };
+
+  const handleSurameChange = (text: string) => {
+    const formattedText = text.charAt(0).toUpperCase() + text.slice(1);
+    setSurname(formattedText);
+  };
+
   const handlePhoneChange = (text: string) => {
     if (!text.startsWith("+48")) {
       setPhone(text);
@@ -31,7 +41,7 @@ export default function NameForm() {
       <Text style={styles.label}>Imię:</Text>
       <TextInput
         style={styles.input}
-        onChangeText={setName}
+        onChangeText={handleNameChange}
         value={name}
         placeholder="Podaj imię"
         keyboardType="default"
@@ -40,7 +50,7 @@ export default function NameForm() {
       <Text style={styles.label}>Nazwisko:</Text>
       <TextInput
         style={styles.input}
-        onChangeText={setSurname}
+        onChangeText={handleSurameChange}
         value={surname}
         placeholder="Podaj nazwisko"
         keyboardType="default"

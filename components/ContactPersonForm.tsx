@@ -7,6 +7,16 @@ export default function ContactPersonForm() {
   const [contactPersonPhone, setContactPersonPhone] = useState("");
   const [isPhoneFocused, setIsPhoneFocused] = useState(false);
 
+  const handleContactPersonNameChange = (text: string) => {
+    const formattedText = text.charAt(0).toUpperCase() + text.slice(1);
+    setContactPersonName(formattedText);
+  };
+
+  const handleContactPersonSurnameChange = (text: string) => {
+    const formattedText = text.charAt(0).toUpperCase() + text.slice(1);
+    setContactPersonSurname(formattedText);
+  };
+
   const handlePhoneChange = (text: string) => {
     if (!text.startsWith("+48")) {
       setContactPersonPhone(text);
@@ -31,7 +41,7 @@ export default function ContactPersonForm() {
       <Text style={styles.label}>Imię:</Text>
       <TextInput
         style={styles.input}
-        onChangeText={setContactPersonName}
+        onChangeText={handleContactPersonNameChange}
         value={contactPersonName}
         placeholder="Podaj imię osoby kontaktowej"
         keyboardType="default"
@@ -40,7 +50,7 @@ export default function ContactPersonForm() {
       <Text style={styles.label}>Nazwisko:</Text>
       <TextInput
         style={styles.input}
-        onChangeText={setContactPersonSurname}
+        onChangeText={handleContactPersonSurnameChange}
         value={contactPersonSurname}
         placeholder="Podaj nazwisko osoby kontaktowej"
         keyboardType="default"

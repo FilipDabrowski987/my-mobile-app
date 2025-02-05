@@ -34,6 +34,7 @@ export type TPatient = {
   };
   degreeOfDisability: string;
   isLyingDownPerson: string;
+  text: string;
 };
 
 export default function HomeScreen() {
