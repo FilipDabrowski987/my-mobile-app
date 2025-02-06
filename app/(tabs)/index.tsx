@@ -34,8 +34,8 @@ export type TPatient = {
   };
   degreeOfDisability: string;
   isLyingDownPerson: string;
-  contactPersons: TContactPerson[];
-  text: string;
+  contactPersons?: TContactPerson[];
+  text?: string;
 };
 
 export type TContactPerson = {

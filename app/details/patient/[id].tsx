@@ -1,6 +1,6 @@
 import { useLocalSearchParams, useRouter } from "expo-router";
 import { useEffect, useState } from "react";
-import { TContactPerson, TPatient } from "../../(tabs)";
+import { TPatient } from "../../(tabs)";
 import {
   Button,
   Linking,
@@ -14,9 +14,6 @@ import patientsData from "../../../assets/testDataPatient.json";
 export default function DetailsPatientScreen() {
   const { id } = useLocalSearchParams<{ id: string }>();
   const [patient, setPatient] = useState<TPatient | null>(null);
-  // const [contactPerson, setContactPerson] = useState<TContactPerson | null>(
-  //   null
-  // );
   const router = useRouter();
 
   useEffect(() => {
