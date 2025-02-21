@@ -4,7 +4,8 @@ import ContactPersonForm from "@/components/ContactPersonForm";
 import NameForm from "@/components/NameForm";
 import Checkbox from "expo-checkbox";
 import { useRouter } from "expo-router";
-import { useState } from "react";
+import { useContext, useState } from "react";
+import { FormContext } from "@/store/FormContext";
 import {
   Button,
   ScrollView,
@@ -21,6 +22,8 @@ export default function AddPatientScreen() {
   const [text, setText] = useState("");
   const router = useRouter();
 
+  const { formData } = useContext(FormContext);
+
   const handleAddContactPerson = () => {
     setContactPersons((prev) => [...prev, prev.length + 1]);
   };
@@ -31,7 +34,9 @@ export default function AddPatientScreen() {
     }
   };
 
-  const handleAddPatient = async () => {};
+  const handleAddPatient = async () => {
+    console.log("Dane pacjenta:", formData);
+  };
 
   return (
     <SafeAreaView style={{ flex: 1 }}>
