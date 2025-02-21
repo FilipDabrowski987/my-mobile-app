@@ -1,16 +1,18 @@
-import { useState } from "react";
+import { FormContext } from "@/store/FormContext";
+import { useContext, useState } from "react";
 import { StyleSheet, Text, TextInput, View } from "react-native";
 
 export default function EmailForm() {
-  const [email, setEmail] = useState("");
+  const { formData, updateField } = useContext(FormContext);
+  // const [email, setEmail] = useState("");
 
   return (
     <View style={styles.inputContainer}>
       <Text style={styles.label}>Email:</Text>
       <TextInput
         style={styles.input}
-        onChangeText={setEmail}
-        value={email}
+        onChangeText={(text) => updateField("email", text || null)}
+        value={formData.email || ""}
         placeholder="Podaj adres email"
         keyboardType="email-address"
       />

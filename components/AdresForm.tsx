@@ -1,7 +1,9 @@
-import { useState } from "react";
+import { FormContext } from "@/store/FormContext";
+import { useContext, useState } from "react";
 import { StyleSheet, Text, TextInput, View } from "react-native";
 
 export default function AdresForm() {
+  const { formData, updateField } = useContext(FormContext);
   const [zipcode, setZipcode] = useState("");
   const [city, setCity] = useState("");
   const [street, setStreet] = useState("");
@@ -18,18 +20,17 @@ export default function AdresForm() {
       )}`;
     }
 
-    setZipcode(formattedText);
+    updateField("zipcode", formattedText);
   };
 
-  const handleCityChange = (text: string) => {
-    const formattedText = text.charAt(0).toUpperCase() + text.slice(1);
-    setCity(formattedText);
+  const handleTextChange = (field: keyof typeof formData) => (text: string) => {
+    updateField(field, text.charAt(0).toUpperCase() + text.slice(1));
   };
 
-  const handleStreetChange = (text: string) => {
-    const formattedText = text.charAt(0).toUpperCase() + text.slice(1);
-    setStreet(formattedText);
-  };
+  // const handleStreetChange = (text: string) => {
+  //   const formattedText = text.charAt(0).toUpperCase() + text.slice(1);
+  //   setStreet(formattedText);
+  // };
 
   return (
     <View style={styles.inputContainer}>
@@ -37,7 +38,7 @@ export default function AdresForm() {
       <TextInput
         style={styles.input}
         onChangeText={handleZipcodeChange}
-        value={zipcode}
+        value={formData.zipcode}
         placeholder="Podaj kod pocztowy"
         keyboardType="number-pad"
       />
@@ -45,8 +46,8 @@ export default function AdresForm() {
       <Text style={styles.label}>Miejscowość:</Text>
       <TextInput
         style={styles.input}
-        onChangeText={handleCityChange}
-        value={city}
+        onChangeText={handleTextChange("city")}
+        value={formData.city}
         placeholder="Podaj miejscowość"
         keyboardType="default"
       />
@@ -54,8 +55,8 @@ export default function AdresForm() {
       <Text style={styles.label}>Ulica:</Text>
       <TextInput
         style={styles.input}
-        onChangeText={handleStreetChange}
-        value={street}
+        onChangeText={handleTextChange("street")}
+        value={formData.street}
         placeholder="Podaj ulicę"
         keyboardType="default"
       />
@@ -65,8 +66,8 @@ export default function AdresForm() {
           <Text style={styles.label}>Nr domu:</Text>
           <TextInput
             style={styles.inputHouseNumber}
-            onChangeText={setHouseNumber}
-            value={houseNumber}
+            onChangeText={handleTextChange("houseNumber")}
+            value={formData.houseNumber}
             placeholder="Nr domu"
             keyboardType="default"
           />
@@ -76,8 +77,8 @@ export default function AdresForm() {
           <Text style={styles.label}>Nr mieszkania:</Text>
           <TextInput
             style={styles.inputHouseNumber}
-            onChangeText={setFlatNumber}
-            value={flatNumber}
+            onChangeText={handleTextChange("flatNumber")}
+            value={formData.flatNumber}
             placeholder="Nr mieszkania"
             keyboardType="default"
           />

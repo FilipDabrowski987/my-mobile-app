@@ -2,8 +2,9 @@ import AdditionalCarerOptionsForm from "@/components/AdditionalCarerOptionsForm"
 import AdresForm from "@/components/AdresForm";
 import EmailForm from "@/components/EmailForm";
 import NameForm from "@/components/NameForm";
+import { FormContext } from "@/store/FormContext";
 import { useRouter } from "expo-router";
-import { useState } from "react";
+import { useContext, useState } from "react";
 import {
   Button,
   ScrollView,
@@ -17,7 +18,27 @@ import { SafeAreaView } from "react-native-safe-area-context";
 export default function AddCarerScreen() {
   const router = useRouter();
 
-  const handleAddCarer = async () => {};
+  const { formData } = useContext(FormContext);
+
+  // const handleAddCarer = async () => {
+  //   console.log("Dane opiekuna:", formData);
+  // };
+
+  const handleAddCarer = async () => {
+    const carerData = {
+      name: formData.name,
+      surname: formData.surname,
+      phone: formData.phone,
+      email: formData.email,
+      city: formData.city,
+      zipcode: formData.zipcode,
+      street: formData.street,
+      houseNumber: formData.houseNumber,
+      flatNumber: formData.flatNumber,
+    };
+
+    console.log("Dane opiekuna:", carerData);
+  };
 
   return (
     <SafeAreaView style={{ flex: 1 }}>

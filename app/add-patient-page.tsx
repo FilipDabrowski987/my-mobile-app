@@ -35,7 +35,18 @@ export default function AddPatientScreen() {
   };
 
   const handleAddPatient = async () => {
-    console.log("Dane pacjenta:", formData);
+    const patientData = {
+      name: formData.name,
+      surname: formData.surname,
+      phone: formData.phone,
+      city: formData.city,
+      zipcode: formData.zipcode,
+      street: formData.street,
+      houseNumber: formData.houseNumber,
+      flatNumber: formData.flatNumber,
+    };
+
+    console.log("Dane pacjenta:", patientData);
   };
 
   return (
