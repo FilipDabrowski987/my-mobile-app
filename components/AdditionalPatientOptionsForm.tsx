@@ -1,10 +1,26 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { StyleSheet, Text, View } from "react-native";
 import { Picker } from "@react-native-picker/picker";
+import { FormContext } from "@/store/FormContext";
 
 export default function AdditionalPatientOptionsForm() {
-  const [degreeOfDisability, setDegreeOfDisability] = useState();
-  const [isLyingDownPerson, setLyingDownPerson] = useState();
+  const { updateField } = useContext(FormContext);
+  const [degreeOfDisability, setDegreeOfDisability] = useState<
+    string | undefined
+  >(undefined);
+  const [isLyingDownPerson, setLyingDownPerson] = useState<string | undefined>(
+    undefined
+  );
+
+  const handleDegreeOfDisabilityChange = (itemValue: string) => {
+    setDegreeOfDisability(itemValue);
+    updateField("degreeOfDisability", itemValue);
+  };
+
+  const handleIsLyingDownPersonChange = (itemValue: string) => {
+    setLyingDownPerson(itemValue);
+    updateField("isLyingDownPerson", itemValue);
+  };
 
   return (
     <View style={styles.inputContainer}>
@@ -15,7 +31,7 @@ export default function AdditionalPatientOptionsForm() {
         )} */}
         <Picker
           selectedValue={degreeOfDisability}
-          onValueChange={(itemValue) => setDegreeOfDisability(itemValue)}
+          onValueChange={handleDegreeOfDisabilityChange}
         >
           <Picker.Item label="Wybierz opcję..." value="" enabled={false} />
           <Picker.Item label="Lekki" value="Lekki" />
@@ -31,7 +47,7 @@ export default function AdditionalPatientOptionsForm() {
         )} */}
         <Picker
           selectedValue={isLyingDownPerson}
-          onValueChange={(itemValue) => setLyingDownPerson(itemValue)}
+          onValueChange={handleIsLyingDownPersonChange}
         >
           <Picker.Item label="Wybierz opcję..." value="" enabled={false} />
           <Picker.Item label="TAK" value="Tak" />

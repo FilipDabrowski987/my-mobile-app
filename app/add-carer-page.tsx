@@ -20,10 +20,6 @@ export default function AddCarerScreen() {
 
   const { formData } = useContext(FormContext);
 
-  // const handleAddCarer = async () => {
-  //   console.log("Dane opiekuna:", formData);
-  // };
-
   const handleAddCarer = async () => {
     const carerData = {
       name: formData.name,

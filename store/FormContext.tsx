@@ -10,7 +10,8 @@ interface FormData {
   street: string;
   houseNumber: string;
   flatNumber: string;
-  // dodaj inne pola w razie potrzeby
+  degreeOfDisability?: string | null;
+  isLyingDownPerson?: string | null;
 }
 
 interface FormContextProps {
@@ -29,6 +30,8 @@ export const FormContext = createContext<FormContextProps>({
     street: "",
     houseNumber: "",
     flatNumber: "",
+    degreeOfDisability: null,
+    isLyingDownPerson: null,
   } as FormData,
   updateField: () => {},
 });
@@ -48,6 +51,8 @@ export const FormProvider = ({ children }: FormProviderProps) => {
     street: "",
     houseNumber: "",
     flatNumber: "",
+    degreeOfDisability: null,
+    isLyingDownPerson: null,
   });
 
   // const updateField = (field: keyof FormData, value: string) => {

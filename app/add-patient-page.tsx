@@ -44,6 +44,8 @@ export default function AddPatientScreen() {
       street: formData.street,
       houseNumber: formData.houseNumber,
       flatNumber: formData.flatNumber,
+      degreeOfDisability: formData.degreeOfDisability,
+      isLyingDownPerson: formData.isLyingDownPerson,
     };
 
     console.log("Dane pacjenta:", patientData);
