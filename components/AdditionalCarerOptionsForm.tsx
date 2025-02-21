@@ -1,11 +1,13 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { StyleSheet, Text, View } from "react-native";
 import { Picker } from "@react-native-picker/picker";
+import { FormContext } from "@/store/FormContext";
 
 export default function AdditionalCarerOptionsForm() {
-  const [isOwes, setOwes] = useState();
-  const [typeOfContract, setTypeOfContract] = useState();
-  const [workingTime, setWorkingTime] = useState();
+  const { updateField } = useContext(FormContext);
+  const [isOwes, setOwes] = useState<string | null>(null);
+  const [typeOfContract, setTypeOfContract] = useState<string | null>(null);
+  const [workingTime, setWorkingTime] = useState<string | null>(null);
 
   return (
     <View style={styles.inputContainer}>
@@ -14,7 +16,10 @@ export default function AdditionalCarerOptionsForm() {
         {/* {!isOwes && <Text style={styles.placeholder}>Wybierz opcję...</Text>} */}
         <Picker
           selectedValue={isOwes}
-          onValueChange={(itemValue) => setOwes(itemValue)}
+          onValueChange={(itemValue) => {
+            setOwes(itemValue);
+            updateField("isOwes", itemValue);
+          }}
         >
           <Picker.Item label="Wybierz opcję..." value="" enabled={false} />
           <Picker.Item label="TAK" value="Tak" />
@@ -29,7 +34,10 @@ export default function AdditionalCarerOptionsForm() {
         )} */}
         <Picker
           selectedValue={typeOfContract}
-          onValueChange={(itemValue) => setTypeOfContract(itemValue)}
+          onValueChange={(itemValue) => {
+            setTypeOfContract(itemValue);
+            updateField("typeOfContract", itemValue);
+          }}
         >
           <Picker.Item label="Wybierz opcję..." value="" enabled={false} />
           <Picker.Item label="Umowa o pracę" value="Umowa o pracę" />
@@ -44,7 +52,10 @@ export default function AdditionalCarerOptionsForm() {
         )} */}
         <Picker
           selectedValue={workingTime}
-          onValueChange={(itemValue) => setWorkingTime(itemValue)}
+          onValueChange={(itemValue) => {
+            setWorkingTime(itemValue);
+            updateField("workingTime", itemValue);
+          }}
         >
           <Picker.Item label="Wybierz opcję..." value="" enabled={false} />
           <Picker.Item label="Cały etat" value="Cały etat" />

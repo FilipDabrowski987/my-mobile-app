@@ -10,6 +10,9 @@ interface FormData {
   street: string;
   houseNumber: string;
   flatNumber: string;
+  isOwes?: string | null;
+  typeOfContract?: string | null;
+  workingTime?: string | null;
   degreeOfDisability?: string | null;
   isLyingDownPerson?: string | null;
 }
@@ -30,6 +33,9 @@ export const FormContext = createContext<FormContextProps>({
     street: "",
     houseNumber: "",
     flatNumber: "",
+    isOwes: null,
+    typeOfContract: null,
+    workingTime: null,
     degreeOfDisability: null,
     isLyingDownPerson: null,
   } as FormData,
@@ -51,6 +57,9 @@ export const FormProvider = ({ children }: FormProviderProps) => {
     street: "",
     houseNumber: "",
     flatNumber: "",
+    isOwes: null,
+    typeOfContract: null,
+    workingTime: null,
     degreeOfDisability: null,
     isLyingDownPerson: null,
   });

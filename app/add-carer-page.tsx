@@ -29,6 +29,9 @@ export default function AddCarerScreen() {
       city: formData.city,
       zipcode: formData.zipcode,
       street: formData.street,
+      isOwes: formData.isOwes,
+      typeOfContract: formData.typeOfContract,
+      workingTime: formData.workingTime,
       houseNumber: formData.houseNumber,
       flatNumber: formData.flatNumber,
     };
