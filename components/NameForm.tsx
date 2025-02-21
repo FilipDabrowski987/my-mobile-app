@@ -1,39 +1,20 @@
-import { useState } from "react";
 import { StyleSheet, Text, TextInput, View } from "react-native";
+import React, { useContext } from "react";
+import { FormContext } from "@/store/FormContext";
 
 export default function NameForm() {
-  const [name, setName] = useState("");
-  const [surname, setSurname] = useState("");
-  const [phone, setPhone] = useState("");
-  const [isPhoneFocused, setIsPhoneFocused] = useState(false);
-
-  const handleNameChange = (text: string) => {
-    const formattedText = text.charAt(0).toUpperCase() + text.slice(1);
-    setName(formattedText);
-  };
-
-  const handleSurameChange = (text: string) => {
-    const formattedText = text.charAt(0).toUpperCase() + text.slice(1);
-    setSurname(formattedText);
-  };
-
-  const handlePhoneChange = (text: string) => {
-    if (!text.startsWith("+48")) {
-      setPhone(text);
-    } else {
-      setPhone(text);
-    }
-  };
+  const { formData, updateField } = useContext(FormContext);
 
   const handlePhoneFocus = () => {
-    if (phone === "") {
-      setPhone("+48 ");
+    if (!formData.phone || !formData.phone.startsWith("+48")) {
+      updateField("phone", "+48 ");
     }
-    setIsPhoneFocused(true);
   };
 
   const handlePhoneBlur = () => {
-    setIsPhoneFocused(false);
+    if (formData.phone.trim() === "+48") {
+      updateField("phone", "");
+    }
   };
 
   return (
@@ -41,8 +22,10 @@ export default function NameForm() {
       <Text style={styles.label}>Imię:</Text>
       <TextInput
         style={styles.input}
-        onChangeText={handleNameChange}
-        value={name}
+        onChangeText={(text) =>
+          updateField("name", text.charAt(0).toUpperCase() + text.slice(1))
+        }
+        value={formData.name}
         placeholder="Podaj imię"
         keyboardType="default"
       />
@@ -50,8 +33,10 @@ export default function NameForm() {
       <Text style={styles.label}>Nazwisko:</Text>
       <TextInput
         style={styles.input}
-        onChangeText={handleSurameChange}
-        value={surname}
+        onChangeText={(text) =>
+          updateField("surname", text.charAt(0).toUpperCase() + text.slice(1))
+        }
+        value={formData.surname}
         placeholder="Podaj nazwisko"
         keyboardType="default"
       />
@@ -59,8 +44,8 @@ export default function NameForm() {
       <Text style={styles.label}>Telefon:</Text>
       <TextInput
         style={styles.input}
-        onChangeText={handlePhoneChange}
-        value={phone}
+        onChangeText={(text) => updateField("phone", text)}
+        value={formData.phone}
         placeholder="Podaj nr telefonu"
         keyboardType="phone-pad"
         onFocus={handlePhoneFocus}
